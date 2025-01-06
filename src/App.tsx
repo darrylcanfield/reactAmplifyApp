@@ -29,14 +29,15 @@ function App() {
 
   return (
     <main>
+      <h1>Real Grappling</h1>
       <nav>
-        <h1>normal routes</h1>
+        <h1>links: load</h1>
         <a href="/">Home</a>
         <a href="/huge">Huge</a>
         <a href="/about">About</a>  
       </nav>
       <nav>
-      <h1>link routes</h1>
+      <h1>routes: no load</h1>
         <Link to="/">Home</Link>
         <Link to ="/huge">Huge</Link>
         <Link to="/about">About</Link>  
@@ -46,7 +47,7 @@ function App() {
         <Route path='/huge' element={<Huge />} />
         <Route path='/about' element={<About />} />
       </Routes>
-      <h1>My todos</h1>
+      <h3>To Dants</h3>
       <button onClick={createTodo}>+ new</button>
       <ul>
         {todos.map((todo) => (
@@ -58,13 +59,9 @@ function App() {
         ))}
       </ul>
       <div>
-        🥳 App successfully hosted. Try creating a new todo.
-        <br />
-        <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates">
-          Review next step of this tutorial.
-        </a>
+      <h3>Sign in/out:</h3>
+        <button onClick={signOut}>Sign out</button>
       </div>
-      <button onClick={signOut}>Sign out</button>
     </main>
   );
 }
