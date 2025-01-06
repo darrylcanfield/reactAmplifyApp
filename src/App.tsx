@@ -3,9 +3,9 @@ import type { Schema } from "../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
 import { useAuthenticator } from '@aws-amplify/ui-react';
 import { Link, Route, Routes } from "react-router";
-import Huge from "./routes/huge";
-import About from "./routes/about";
-import Home from "./routes/home";
+import Huge from "./routes/huge.tsx";
+import About from "./routes/about.tsx";
+import Home from "./routes/home.tsx";
 
 const client = generateClient<Schema>();
 
