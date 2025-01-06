@@ -8,6 +8,10 @@ import outputs from "../amplify_outputs.json";
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
+// Importing the Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 Amplify.configure(outputs);
 
 ReactDOM.createRoot(document.getElementById("root")!).render( 

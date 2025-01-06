@@ -1,5 +1,6 @@
+
 const Home: React.FC = () => {
-    return <h1>Welcome to the Home Page</h1>;
+    return <h1>Welcome to RealGrappling!</h1>;
   };
   
   export default Home;

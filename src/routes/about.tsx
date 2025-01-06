@@ -1,4 +1,15 @@
-const About = () => {
-    return <h1>Welcome to the About Page</h1>;
-  };
+import { useAuthenticator } from '@aws-amplify/ui-react';
+import { Link, Route, Routes } from "react-router";
+import { Container, Row, Col } from "react-bootstrap";
+
+function About () {
+  const { signOut } = useAuthenticator();
+
+  return (      
+    <Container>
+      <h4>About RealGrappling</h4>
+    </Container>
+  );
+};
+
 export default About; 
