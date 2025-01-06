@@ -1,8 +1,5 @@
-import { useEffect, useState } from "react";
-import type { Schema } from "../amplify/data/resource";
-import { generateClient } from "aws-amplify/data";
 import { useAuthenticator } from '@aws-amplify/ui-react';
-import { Link, Route, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 import Standup from "./routes/standup.tsx";
 import About from "./routes/about.tsx";
 import Home from "./routes/home.tsx";
@@ -18,8 +15,6 @@ import AttackingOpenGuard from "./routes/attackingOpenGuard.tsx";
 import AttackingSingleLegX from "./routes/attackingSingleLegX.tsx";
 import { Container } from "react-bootstrap";
 import Navbar from "./navbar.tsx";
-
-const client = generateClient<Schema>();
 
 function App() {
   const { signOut } = useAuthenticator();
