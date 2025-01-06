@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react";
 import type { Schema } from "../../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
-import { useAuthenticator } from '@aws-amplify/ui-react';
-import { Link, Route, Routes } from "react-router";
 import { Container, Row, Col } from "react-bootstrap";
 
 const client = generateClient<Schema>();
 
 function MyList () {
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
-  const { signOut } = useAuthenticator();
 
   useEffect(() => {
     client.models.Todo.observeQuery().subscribe({
