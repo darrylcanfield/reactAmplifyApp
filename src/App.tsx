@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import type { Schema } from "../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
 import { useAuthenticator } from '@aws-amplify/ui-react';
+import { Link, Route, Routes } from "react-router";
+import Huge from "./routes/huge";
+import About from "./routes/about";
+import Home from "./routes/home";
 
 const client = generateClient<Schema>();
 
@@ -25,6 +29,23 @@ function App() {
 
   return (
     <main>
+      <nav>
+        <h1>normal routes</h1>
+        <a href="/">Home</a>
+        <a href="/huge">Huge</a>
+        <a href="/about">About</a>  
+      </nav>
+      <nav>
+      <h1>link routes</h1>
+        <Link to="/">Home</Link>
+        <Link to ="/huge">Huge</Link>
+        <Link to="/about">About</Link>  
+      </nav>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/huge' element={<Huge />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
       <h1>My todos</h1>
       <button onClick={createTodo}>+ new</button>
       <ul>
