@@ -37,17 +37,17 @@ function App() {
       </nav> */}
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='standup' element={<Standup />} />
-        <Route path='standupCollarSleeve' element={<StandupCollarSleeve />} />
-        <Route path='standupCrossLapel' element={<StandupCrossLapel />} />
-        <Route path='standupLapelAndElbow' element={<StandupLapelAndElbow/>} /><Route path='/passingOpenGuard' element={<PassingOpenGuard />} />
-        <Route path='passingHalfGuard' element={<PassingHalfGuard />} />
-        <Route path='passingSingleLegX' element={<PassingSingleLegX />} />
-        <Route path='attackingOpenGuard' element={<AttackingOpenGuard />} />
-        <Route path='attackingHalfGuard' element={<AttackingHalfGuard />} />
-        <Route path='attackingSingleLegX' element={<AttackingSingleLegX/>} />
-        <Route path='myList' element={<MyList />} />
-        <Route path='about' element={<About />} />
+        <Route path='/standup' element={<Standup />} />
+        <Route path='/standupCollarSleeve' element={<StandupCollarSleeve />} />
+        <Route path='/standupCrossLapel' element={<StandupCrossLapel />} />
+        <Route path='/standupLapelAndElbow' element={<StandupLapelAndElbow/>} /><Route path='/passingOpenGuard' element={<PassingOpenGuard />} />
+        <Route path='/passingHalfGuard' element={<PassingHalfGuard />} />
+        <Route path='/passingSingleLegX' element={<PassingSingleLegX />} />
+        <Route path='/attackingOpenGuard' element={<AttackingOpenGuard />} />
+        <Route path='/attackingHalfGuard' element={<AttackingHalfGuard />} />
+        <Route path='/attackingSingleLegX' element={<AttackingSingleLegX/>} />
+        <Route path='/myList' element={<MyList />} />
+        <Route path='/about' element={<About />} />
       </Routes>
       </Container>
       <Container>
