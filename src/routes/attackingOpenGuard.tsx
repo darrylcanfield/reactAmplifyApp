@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function AttackingHalfGuard() {
+function AttackingOpenGuard() {
   return (
     <Container fluid>
       <Row>
@@ -66,4 +66,4 @@ function AttackingHalfGuard() {
     </Container>
   );
 }
-  export default AttackingHalfGuard;
+  export default AttackingOpenGuard;

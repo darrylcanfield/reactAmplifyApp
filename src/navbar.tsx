@@ -2,8 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useAuthenticator } from '@aws-amplify/ui-react';
 
 function NavBar() {
+  const { signOut } = useAuthenticator();
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -11,6 +13,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+          <Nav.Link href="/transitions">All Transitions</Nav.Link>
             <NavDropdown title="Throws & Takedows" id="basic-nav-dropdown">
               <NavDropdown.Item href="/standupCollarSleeve">Standup: Collar & Sleeve</NavDropdown.Item>
               <NavDropdown.Item href="/standupCrossLapel">Standup: Cross Lapel</NavDropdown.Item>
@@ -31,6 +34,7 @@ function NavBar() {
             </NavDropdown>
             <Nav.Link href="/myList">My List</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
+            <button onClick={signOut}>Sign out</button>
           </Nav>
         </Navbar.Collapse>
       </Container>

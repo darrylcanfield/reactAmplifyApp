@@ -18,6 +18,8 @@ function PassingSingleLegX() {
                 bulk of the card's content.
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>
+              <Button variant="primary">Go somewhere</Button>
+              <Button variant="primary">Go somewhere</Button>
             </Card.Body>
           </Card>
         </Col>

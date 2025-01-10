@@ -1,6 +1,5 @@
-import { useAuthenticator } from '@aws-amplify/ui-react';
 import { Route, Routes } from "react-router";
-import Standup from "./routes/standup.tsx";
+import Transitions from "./routes/transitions.tsx";
 import About from "./routes/about.tsx";
 import Home from "./routes/home.tsx";
 import MyList from "./routes/myList.tsx";
@@ -17,8 +16,6 @@ import { Container } from "react-bootstrap";
 import Navbar from "./navbar.tsx";
 
 function App() {
-  const { signOut } = useAuthenticator();
-
   return (
     <main>
       <Navbar /> 
@@ -37,10 +34,11 @@ function App() {
       </nav> */}
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/standup' element={<Standup />} />
+        <Route path='/transitions' element={<Transitions />} />
         <Route path='/standupCollarSleeve' element={<StandupCollarSleeve />} />
         <Route path='/standupCrossLapel' element={<StandupCrossLapel />} />
-        <Route path='/standupLapelAndElbow' element={<StandupLapelAndElbow/>} /><Route path='/passingOpenGuard' element={<PassingOpenGuard />} />
+        <Route path='/standupLapelAndElbow' element={<StandupLapelAndElbow/>} />
+        <Route path='/passingOpenGuard' element={<PassingOpenGuard />} />
         <Route path='/passingHalfGuard' element={<PassingHalfGuard />} />
         <Route path='/passingSingleLegX' element={<PassingSingleLegX />} />
         <Route path='/attackingOpenGuard' element={<AttackingOpenGuard />} />
@@ -49,10 +47,6 @@ function App() {
         <Route path='/myList' element={<MyList />} />
         <Route path='/about' element={<About />} />
       </Routes>
-      </Container>
-      <Container>
-      <h3>Sign in/out:</h3>
-        <button onClick={signOut}>Sign out</button>
       </Container>
     </main>
   );

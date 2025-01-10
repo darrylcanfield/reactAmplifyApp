@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ahg1",
+    "sub": "attackingHalfGuard",
+    "name": "Knee cut (same side / headquarters)",
+    "why": "They turn and square up",
+    "description": "Knee cut (cross side) from Half Guard"
+  },
+  {
+    "id": "ahg3",
+    "sub": "attackingHalfGuard",
+    "name": "Backstep Reap",
+    "why": "They turn down, drop their knee",
+    "description": "Backstep Reap from Half Guard"
+  },
+  {
+    "id": "ahg4",
+    "sub": "attackingHalfGuard",
+    "name": "Double Unders Pass",
+    "why": "They bring their leg over the top",
+    "description": "Double Unders Pass"
+  }
+]
