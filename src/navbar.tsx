@@ -13,7 +13,6 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          <Nav.Link href="/transitions">All Transitions</Nav.Link>
             <NavDropdown title="Throws & Takedows" id="basic-nav-dropdown">
               <NavDropdown.Item href="/standupCollarSleeve">Standup: Collar & Sleeve</NavDropdown.Item>
               <NavDropdown.Item href="/standupCrossLapel">Standup: Cross Lapel</NavDropdown.Item>
@@ -32,6 +31,7 @@ function NavBar() {
               <NavDropdown.Item href="/attackingSingleLegX">Attacking from Single Leg X</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
+            <Nav.Link href="/transitions">All Transitions</Nav.Link>         
             <Nav.Link href="/myList">My List</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <button onClick={signOut}>Sign out</button>
