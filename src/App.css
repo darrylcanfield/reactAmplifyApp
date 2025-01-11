@@ -41,3 +41,7 @@
   max-width: 700px;
   padding: 2em;
 }
+
+.realimg {
+  width: 400px !important;
+};

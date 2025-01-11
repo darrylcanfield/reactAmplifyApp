@@ -65,17 +65,17 @@ a {
 }
 
 .card-img-top {
-  width: 50% !important;
+  width: 400px;
 }
 
 button.btn.btn-warning {
   margin: .1em;
 }
 
-button.reactionButton.btn.btn-warning {
-  width: 50%;
-}
-
 .card {
   max-width: 800px;
 }
+
+.realimg {
+  width: 400px !important;
+};
