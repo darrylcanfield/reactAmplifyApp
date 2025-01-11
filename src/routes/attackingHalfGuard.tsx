@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { Schema } from "../../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
 import data from "../data.json"; // Import the JSON file
@@ -19,14 +19,7 @@ interface DataItem {
 
 const AttackingHalfGuard = () => {
   const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
-  const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
   const [notification, setNotification] = useState<string | null>(null); // State for notification message
-
-  useEffect(() => {
-    client.models.Todo.observeQuery().subscribe({
-      next: (data) => setTodos([...data.items]),
-    });
-  }, []);
 
   // Function for creating a todo with activeItem.name
   function createTodo(content: string) {
@@ -105,9 +98,6 @@ const AttackingHalfGuard = () => {
                       }}
                     >+Favorite
                     </Button>
-
-
-
                   </div>
                 )}
               </div>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { Schema } from "../../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
 import data from "../data.json"; // Import the JSON file
@@ -19,17 +19,19 @@ interface DataItem {
 
 const AttackingOpenGuard = () => {
   const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
-  const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
-
-  useEffect(() => {
-    client.models.Todo.observeQuery().subscribe({
-      next: (data) => setTodos([...data.items]),
-    });
-  }, []);
+  const [notification, setNotification] = useState<string | null>(null); // State for notification message
 
   // Function for creating a todo with activeItem.name
   function createTodo(content: string) {
+    if (!content.trim()) return; // Prevent creating empty todos
+
     client.models.Todo.create({ content });
+
+    // Set a success message for a new todo
+    setNotification(`New Todo added: "${content}"`);
+
+    // Clear the notification after 3 seconds
+    setTimeout(() => setNotification(null), 3000);
   }
 
   // Handle button click to set the active item
@@ -39,6 +41,21 @@ const AttackingOpenGuard = () => {
 
   return (
     <div style={{ padding: "20px" }}>
+      {/* Display the notification message */}
+      {notification && (
+        <div
+          style={{
+            backgroundColor: "#28a745", // Green background
+            color: "white",
+            padding: "10px",
+            borderRadius: "5px",
+            marginBottom: "10px",
+          }}
+        >
+          {notification}
+        </div>
+      )}
+
       <Row>
         <Col>
           <Card>
@@ -61,24 +78,26 @@ const AttackingOpenGuard = () => {
               {/* Dynamically rendered component */}
               <div style={{ marginTop: "20px" }}>
                 {activeItem && (
-                  <div>
+                  <div
+                    style={{
+                      border: "1px solid black",
+                      padding: "10px",
+                      borderRadius: "5px",
+                    }}
+                  >
                     <h2>{activeItem.name}</h2>
                     <p>{activeItem.description}</p>
-                    <Col sm={4}>
-                        <Button
-                          variant="primary"
-                          onClick={() => {
-                            if (activeItem) {
-                              createTodo(activeItem.name);
-                            } else {
-                              alert("No active item selected");
-                            }
-                          }}
-                        >
-                          *Favorite
-                        </Button>
-                      </Col>
-
+                    <Button
+                      variant="primary"
+                      onClick={() => {
+                        if (activeItem) {
+                          createTodo(activeItem.name);
+                        } else {
+                          alert("No active item selected");
+                        }
+                      }}
+                    >+Favorite
+                    </Button>
                   </div>
                 )}
               </div>
