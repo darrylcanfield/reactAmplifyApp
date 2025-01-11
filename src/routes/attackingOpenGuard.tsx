@@ -1,23 +1,44 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import type { Schema } from "../../amplify/data/resource";
+import { generateClient } from "aws-amplify/data";
 import data from "../data.json"; // Import the JSON file
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+const client = generateClient<Schema>();
+
 // Define the type for items in the data array
 interface DataItem {
-  id: string;        // Assuming 'id' is a string (use 'number' if it's a number)
+  id: string;
   why: string;
   name: string;
   description: string;
 }
 
-const AttackingHalfGuard = () => {
+const AttackingOpenGuard = () => {
   const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
+  const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
 
+  useEffect(() => {
+    client.models.Todo.observeQuery().subscribe({
+      next: (data) => setTodos([...data.items]),
+    });
+  }, []);
+
+  // Function for creating a todo with activeItem.name
+  function createTodo(content: string) {
+    client.models.Todo.create({ content });
+  }
+
+  // Function for deleting a todo
+  function deleteTodo(id: string) {
+    client.models.Todo.delete({ id });
+  }
+
+  // Handle button click to set the active item
   const handleButtonClick = (item: DataItem) => {
-    // Set the clicked item as the active one
     setActiveItem(item);
   };
 
@@ -41,21 +62,28 @@ const AttackingHalfGuard = () => {
                   Reaction: {item.why}
                 </Button>
               ))}
+              
               {/* Dynamically rendered component */}
               <div style={{ marginTop: "20px" }}>
                 {activeItem && (
-                  <div
-                    style={{
-                      border: "1px solid black",
-                      padding: "10px",
-                      borderRadius: "5px",
-                    }}
-                  >
+                  <div>
                     <h2>{activeItem.name}</h2>
                     <p>{activeItem.description}</p>
-                    <Button className="reactionButton" variant="warning" onClick={() => setActiveItem(null)}>
-                      Remove
-                    </Button>
+                    <Col sm={4}>
+                        <Button
+                          variant="primary"
+                          onClick={() => {
+                            if (activeItem) {
+                              createTodo(activeItem.name);
+                            } else {
+                              alert("No active item selected");
+                            }
+                          }}
+                        >
+                          *Favorite
+                        </Button>
+                      </Col>
+
                   </div>
                 )}
               </div>
@@ -67,4 +95,4 @@ const AttackingHalfGuard = () => {
   );
 };
 
-export default AttackingHalfGuard;
+export default AttackingOpenGuard;
