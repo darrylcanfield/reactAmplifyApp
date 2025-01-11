@@ -41,11 +41,6 @@ const AttackingHalfGuard = () => {
     setTimeout(() => setNotification(null), 3000);
   }
 
-  // Function for deleting a todo
-  function deleteTodo(id: string) {
-    client.models.Todo.delete({ id });
-  }
-
   // Handle button click to set the active item
   const handleButtonClick = (item: DataItem) => {
     setActiveItem(item);
