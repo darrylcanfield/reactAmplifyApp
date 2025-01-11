@@ -18,7 +18,6 @@ interface DataItem {
   img: string;
   b1: string;
   b2: string;
-  b3: string;
 }
 
 const AttackingHalfGuard = () => {
