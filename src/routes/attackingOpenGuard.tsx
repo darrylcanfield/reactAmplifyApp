@@ -15,6 +15,9 @@ interface DataItem {
   why: string;
   name: string;
   description: string;
+  img: string;
+  b1: string;
+  b2: string;
 }
 
 const AttackingOpenGuard = () => {
@@ -28,7 +31,7 @@ const AttackingOpenGuard = () => {
     client.models.Todo.create({ content });
 
     // Set a success message for a new todo
-    setNotification(`New Todo added: "${content}"`);
+    setNotification(`Favorite added: "${content}"`);
 
     // Clear the notification after 3 seconds
     setTimeout(() => setNotification(null), 3000);
@@ -55,11 +58,11 @@ const AttackingOpenGuard = () => {
           {notification}
         </div>
       )}
-
-      <Row>
+    
+    <Row>
         <Col>
           <Card>
-            <Card.Img variant="top" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg" />
+            <Card.Img className="realimg" variant="top" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg" />
             <Card.Body>
               <Card.Title>Attacking From Half Guard</Card.Title>
               <Card.Text>
@@ -69,11 +72,17 @@ const AttackingOpenGuard = () => {
               </Card.Text>
 
               {/* Buttons to show data */}
-              {data.map((item) => (
-                <Button className="reactionButton" variant="warning" key={item.id} onClick={() => handleButtonClick(item)}>
-                  Reaction: {item.why}
-                </Button>
+              <Row>
+              {data
+              .filter((item) => item.sub === "attackingOpenGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
+              .map((item) => (
+                <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
+                  <Button className="reactionButton" variant="warning" onClick={() => handleButtonClick(item)}>
+                    Reaction: {item.why}
+                  </Button>
+                </Col>
               ))}
+              </Row>
               
               {/* Dynamically rendered component */}
               <div style={{ marginTop: "20px" }}>
@@ -85,19 +94,42 @@ const AttackingOpenGuard = () => {
                       borderRadius: "5px",
                     }}
                   >
-                    <h2>{activeItem.name}</h2>
-                    <p>{activeItem.description}</p>
-                    <Button
-                      variant="primary"
-                      onClick={() => {
-                        if (activeItem) {
-                          createTodo(activeItem.name);
-                        } else {
-                          alert("No active item selected");
-                        }
-                      }}
-                    >+Favorite
-                    </Button>
+                  <Row>
+                    <Col><img  className="realimg" src={activeItem.img} /></Col>
+                    <Col><h2>{activeItem.name}</h2></Col>
+                    <Col>
+                      <Button
+                        variant="primary"
+                        onClick={() => {
+                          if (activeItem) {
+                            createTodo(activeItem.name);
+                          } else {
+                            alert("No active item selected");
+                          }
+                        }}
+                      >+Favorite
+                      </Button>
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col> <p>{activeItem.description}</p></Col>
+                  </Row>
+
+                    {/* Buttons to show data */}
+              <Row>
+                <Col>
+                <Button className="reactionButton" variant="warning">
+                   {activeItem.b1}
+                </Button>
+                </Col>
+                <Col>
+                <Button className="reactionButton" variant="warning">
+                   {activeItem.b2}
+                </Button>
+                </Col>
+              </Row>
+
                   </div>
                 )}
               </div>

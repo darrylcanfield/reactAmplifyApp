@@ -73,11 +73,13 @@ const AttackingHalfGuard = () => {
 
               {/* Buttons to show data */}
               <Row>
-              {data.map((item) => (
-                <Col>
-                <Button className="reactionButton" variant="warning" key={item.id} onClick={() => handleButtonClick(item)}>
-                  Reaction: {item.why}
-                </Button>
+              {data
+              .filter((item) => item.sub === "attackingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
+              .map((item) => (
+                <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
+                  <Button className="reactionButton" variant="warning" onClick={() => handleButtonClick(item)}>
+                    Reaction: {item.why}
+                  </Button>
                 </Col>
               ))}
               </Row>
@@ -128,9 +130,6 @@ const AttackingHalfGuard = () => {
                 </Col>
               </Row>
 
-                    
-                   
-                    
                   </div>
                 )}
               </div>

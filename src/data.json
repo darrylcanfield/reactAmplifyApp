@@ -1,7 +1,7 @@
 [
   {
-    "id": "ahg1",
-    "sub": "attackingHalfGuard",
+    "id": "phg1",
+    "sub": "passingHalfGuard",
     "name": "Knee cut (same side / headquarters)",
     "why": "They turn and square up",
     "description": "Knee cut (cross side) from Half Guard",
@@ -10,8 +10,8 @@
     "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
   },
   {
-    "id": "ahg3",
-    "sub": "attackingHalfGuard",
+    "id": "phg2",
+    "sub": "passingHalfGuard",
     "name": "Backstep Reap",
     "why": "They turn down, drop their knee",
     "description": "Backstep Reap from Half Guard",
@@ -20,9 +20,39 @@
     "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
   },
   {
-    "id": "ahg4",
-    "sub": "attackingHalfGuard",
+    "id": "phg3",
+    "sub": "passingHalfGuard",
     "name": "Double Unders Pass",
+    "why": "They bring their leg over the top",
+    "description": "Double Unders Pass",
+    "b1": "continue to side control",
+    "b2": "they hammer down and force you back to half",
+    "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
+  },
+  {
+    "id": "aog1",
+    "sub": "attackingOpenGuard",
+    "name": "Double Unders Pass",
+    "why": "They bring their leg over the top",
+    "description": "Double Unders Pass",
+    "b1": "continue to side control",
+    "b2": "they hammer down and force you back to half",
+    "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
+  },
+  {
+    "id": "aog1",
+    "sub": "attackingOpenGuard",
+    "name": "Double Unders Pass1",
+    "why": "They bring their leg over the top",
+    "description": "Double Unders Pass",
+    "b1": "continue to side control",
+    "b2": "they hammer down and force you back to half",
+    "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
+  },
+  {
+    "id": "aog1",
+    "sub": "attackingOpenGuard",
+    "name": "Double Unders Pass2",
     "why": "They bring their leg over the top",
     "description": "Double Unders Pass",
     "b1": "continue to side control",
