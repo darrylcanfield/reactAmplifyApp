@@ -1,121 +1,150 @@
-import React from 'react';
-import { Container, Row, Col, Card, Button, Navbar, Nav } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from "react";
+import type { Schema } from "../../amplify/data/resource";
+import { generateClient } from "aws-amplify/data";
+import data from "../data.json"; // Import the JSON file
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { Container } from "react-bootstrap";
 
-function App() {
-  return (
-    <div className="App">
-      {/* Sticky Navbar */}
-      <Navbar bg="dark" variant="dark" expand="lg" className="sticky-top">
-        <Container>
-          <Navbar.Brand href="#">Sticky Template</Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-nav" />
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="#">Home</Nav.Link>
-              <Nav.Link href="#">About</Nav.Link>
-              <Nav.Link href="#">Services</Nav.Link>
-              <Nav.Link href="#">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+const client = generateClient<Schema>();
 
-      {/* Main Content Container */}
-      <Container className="content-container">
-        <h1 className="text-center mb-4">React Bootstrap Template</h1>
-
-        {/* Content with Cards */}
-        <Row>
-          <Col md={4} sm={6} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src="https://via.placeholder.com/300" />
-              <Card.Body>
-                <Card.Title>Card Title 1</Card.Title>
-                <Card.Text>
-                  This is a description of the card. It can hold some information or content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col md={4} sm={6} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src="https://via.placeholder.com/300" />
-              <Card.Body>
-                <Card.Title>Card Title 2</Card.Title>
-                <Card.Text>
-                  Another card with different content. You can customize each card as needed.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col md={4} sm={6} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src="https://via.placeholder.com/300" />
-              <Card.Body>
-                <Card.Title>Card Title 3</Card.Title>
-                <Card.Text>
-                  A description for another card. Bootstrap's grid system and cards are easy to use.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-
-        {/* More Cards */}
-        <Row>
-          <Col md={4} sm={6} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src="https://via.placeholder.com/300" />
-              <Card.Body>
-                <Card.Title>Card Title 4</Card.Title>
-                <Card.Text>
-                  Here’s an additional card for testing layout. Cards are very flexible.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col md={4} sm={6} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src="https://via.placeholder.com/300" />
-              <Card.Body>
-                <Card.Title>Card Title 5</Card.Title>
-                <Card.Text>
-                  More content for testing the footer and sticky behavior.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col md={4} sm={6} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src="https://via.placeholder.com/300" />
-              <Card.Body>
-                <Card.Title>Card Title 6</Card.Title>
-                <Card.Text>
-                  This is yet another card with sample content. Adjust as necessary.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-
-      {/* Sticky Footer */}
-      <footer className="bg-dark text-white text-center py-3 sticky-footer">
-        <p>&copy; 2025 Sticky Footer Template. All Rights Reserved.</p>
-      </footer>
-    </div>
-  );
+// Define the type for items in the data array
+interface DataItem {
+  id: string;
+  why: string;
+  name: string;
+  description: string;
+  img: string;
+  b1: string;
+  b2: string;
 }
 
-export default App;
+const StandupOverhook = () => {
+  const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
+  const [notification, setNotification] = useState<string | null>(null); // State for notification message
+
+  // Function for creating a todo with activeItem.name
+  function createTodo(content: string) {
+    if (!content.trim()) return; // Prevent creating empty todos
+
+    client.models.Todo.create({ content });
+
+    // Set a success message for a new todo
+    setNotification(`Favorite added: "${content}"`);
+
+    // Clear the notification after 3 seconds
+    setTimeout(() => setNotification(null), 3000);
+  }
+
+  // Handle button click to set the active item
+  const handleButtonClick = (item: DataItem) => {
+    setActiveItem(item);
+  };
+
+  return (
+    <Container fluid>
+      <Row>
+      {/* Display the notification message */}
+      {notification && (
+        <div
+          style={{
+            backgroundColor: "#28a745", // Green background
+            color: "white",
+            padding: "10px",
+            borderRadius: "5px",
+            marginBottom: "10px",
+          }}
+        >
+          {notification}
+        </div>
+      )}
+    
+    
+        <Col>
+          <Card>
+            <Card.Body>
+            <Row>
+            <h3>Attacking From Half Guard</h3>
+            </Row>
+              <Row>
+                <Col>
+                    <img className="realimg" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg"/>
+                </Col>
+                <Col>
+                   <strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.
+                </Col>
+              </Row>
+
+              {/* Buttons to show data */}
+              <Row>
+              {data
+              .filter((item) => item.sub === "passingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
+              .map((item) => (
+                <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
+                  <Button className="reactionButton" variant="warning" onClick={() => handleButtonClick(item)}>
+                    Reaction: {item.why}
+                  </Button>
+                </Col>
+              ))}
+              </Row>
+              
+              {/* Dynamically rendered component */}
+              <div style={{ marginTop: "20px" }}>
+                {activeItem && (
+                  <div
+                    style={{
+                      border: "1px solid black",
+                      padding: "10px",
+                      borderRadius: "5px",
+                    }}
+                  >
+                  <Row>
+                    <Col><img  className="realimg" src={activeItem.img} /></Col>
+                      <Col>
+                   <strong>{activeItem.name}: </strong>{activeItem.description}
+                   <Container>
+                    <Button
+                        variant="primary"
+                        onClick={() => {
+                          if (activeItem) {
+                            createTodo(activeItem.name);
+                          } else {
+                            alert("No active item selected");
+                          }
+                        }}
+                      >+Favorite
+                      </Button>
+                  </Container>
+                   
+                </Col>
+                  </Row>
+                  
+
+                    {/* Buttons to show data */}
+              <Row>
+                <Col>
+                <Button className="reactionButton" variant="success">
+                   {activeItem.b1}
+                </Button>
+                </Col>
+                <Col>
+                <Button className="reactionButton" variant="warning">
+                   {activeItem.b2}
+                </Button>
+                </Col>
+              </Row>
+
+                  </div>
+                )}
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
+
+export default StandupOverhook;
