@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Container } from "react-bootstrap";
 
 const client = generateClient<Schema>();
 
@@ -43,7 +44,8 @@ const PassingHalfGuard = () => {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <Container fluid>
+      <Row>
       {/* Display the notification message */}
       {notification && (
         <div
@@ -59,17 +61,21 @@ const PassingHalfGuard = () => {
         </div>
       )}
     
-    <Row>
+    
         <Col>
           <Card>
-            <Card.Img className="realimg" variant="top" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg" />
             <Card.Body>
-              <Card.Title>Attacking From Half Guard</Card.Title>
-              <Card.Text>
-                <div>
-                  <strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.
-                </div>
-              </Card.Text>
+            <Row>
+            <h3>Attacking From Half Guard</h3>
+            </Row>
+              <Row>
+                <Col>
+                    <img className="realimg" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg"/>
+                </Col>
+                <Col>
+                   <strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.
+                </Col>
+              </Row>
 
               {/* Buttons to show data */}
               <Row>
@@ -96,9 +102,10 @@ const PassingHalfGuard = () => {
                   >
                   <Row>
                     <Col><img  className="realimg" src={activeItem.img} /></Col>
-                    <Col><h2>{activeItem.name}</h2></Col>
-                    <Col>
-                      <Button
+                      <Col>
+                   <strong>{activeItem.name}: </strong>{activeItem.description}
+                   <Container>
+                    <Button
                         variant="primary"
                         onClick={() => {
                           if (activeItem) {
@@ -109,17 +116,16 @@ const PassingHalfGuard = () => {
                         }}
                       >+Favorite
                       </Button>
-                    </Col>
+                  </Container>
+                   
+                </Col>
                   </Row>
-
-                  <Row>
-                    <Col> <p>{activeItem.description}</p></Col>
-                  </Row>
+                  
 
                     {/* Buttons to show data */}
               <Row>
                 <Col>
-                <Button className="reactionButton" variant="warning">
+                <Button className="reactionButton" variant="success">
                    {activeItem.b1}
                 </Button>
                 </Col>
@@ -137,7 +143,7 @@ const PassingHalfGuard = () => {
           </Card>
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 };
 

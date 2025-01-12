@@ -7,15 +7,15 @@ import { useAuthenticator } from '@aws-amplify/ui-react';
 function NavBar() {
   const { signOut } = useAuthenticator();
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" bg="white" className="fixed-top">
       <Container>
-        <Navbar.Brand href="/">RealGrappling</Navbar.Brand>
+        <Navbar.Brand href="/">RealGrappling</Navbar.Brand> 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Throws & Takedows" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/standupCollarSleeve">Standup: Collar & Sleeve</NavDropdown.Item>
-              <NavDropdown.Item href="/standupCrossLapel">Standup: Cross Lapel</NavDropdown.Item>
+            <NavDropdown title="Throws & Takedowns" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/standupUnderhook">Standup: Underhook</NavDropdown.Item>
+              <NavDropdown.Item href="/standupOverhook">Standup: Overhook</NavDropdown.Item>
               <NavDropdown.Item href="/standupLapelAndElbow">Standup: Lapel & Elbow</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
@@ -25,14 +25,14 @@ function NavBar() {
               <NavDropdown.Item href="/passingSingleLegX">Pass Single Leg X</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
-            <NavDropdown title="Guard Attacks / Retention" id="basic-nav-dropdown">
+            <NavDropdown title="Guard Attacks" id="basic-nav-dropdown">
               <NavDropdown.Item href="/attackingOpenGuard">Attacking from Open Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingHalfGuard">Attacking from Half Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingSingleLegX">Attacking from Single Leg X</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
-            <Nav.Link href="/transitions">All Transitions</Nav.Link>         
-            <Nav.Link href="/myList">My List</Nav.Link>
+            <Nav.Link href="/transitions">Transitions</Nav.Link>         
+            <Nav.Link href="/myList">MyList</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <button onClick={signOut}>Sign out</button>
           </Nav>

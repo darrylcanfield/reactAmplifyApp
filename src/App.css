@@ -45,3 +45,52 @@
 .realimg {
   width: 400px !important;
 };
+
+/* Ensure the page takes full height */
+html, body, #root {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+/* Flexbox container for the app */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Content container */
+.content-container {
+  flex-grow: 1;
+  margin-top: 60px; /* Adjust this if needed to prevent overlap with navbar */
+}
+
+/* Sticky footer with space at the bottom */
+.sticky-footer {
+  margin-top: auto; /* Push footer to the bottom if content isn't enough */
+}
+
+/* Make the body content scrollable */
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Optional: You can adjust margin on the navbar if it overlaps the content */
+.navbar {
+  z-index: 1030; /* Ensure the navbar stays on top of other content */
+}
+
+/* Optional: Hide horizontal scroll if needed */
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure the page takes full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;  /* Reset default margin */
+}
+
+.container-fluid {
+  padding-top: 40px;
+}

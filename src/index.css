@@ -72,10 +72,21 @@ button.btn.btn-warning {
   margin: .1em;
 }
 
-.card {
-  max-width: 800px;
+.realimg {
+  width: 100% !important;
+};
+
+/* Optional: Hide horizontal scroll if needed */
+body {
+  overflow-x: hidden;
 }
 
-.realimg {
-  width: 400px !important;
-};
+/* Ensure the page takes full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;  /* Reset default margin */
+}
+
+.container-fluid {
+  padding-top: 40px;
+}

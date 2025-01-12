@@ -1,70 +1,121 @@
-import { useState } from "react";
-import data from "../data.json"; // Import the JSON file
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React from 'react';
+import { Container, Row, Col, Card, Button, Navbar, Nav } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Define the type for items in the data array
-interface DataItem {
-  id: string;        // Assuming 'id' is a string (use 'number' if it's a number)
-  why: string;
-  name: string;
-  description: string;
-}
-
-const StandupOverhook = () => {
-  const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
-
-  const handleButtonClick = (item: DataItem) => {
-    // Set the clicked item as the active one
-    setActiveItem(item);
-  };
-
+function App() {
   return (
-    <div style={{ padding: "20px" }}>
-      <Row>
-        <Col>
-          <Card>
-            <Card.Img variant="top" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg" />
-            <Card.Body>
-              <Card.Title>Passing Half Guard</Card.Title>
-              <Card.Text>
-                <div>
-                  <strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.
-                </div>
-              </Card.Text>
+    <div className="App">
+      {/* Sticky Navbar */}
+      <Navbar bg="dark" variant="dark" expand="lg" className="sticky-top">
+        <Container>
+          <Navbar.Brand href="#">Sticky Template</Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbar-nav" />
+          <Navbar.Collapse id="navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link href="#">Home</Nav.Link>
+              <Nav.Link href="#">About</Nav.Link>
+              <Nav.Link href="#">Services</Nav.Link>
+              <Nav.Link href="#">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
-              {/* Buttons to show data */}
-              {data.map((item) => (
-                <Button className="reactionButton" variant="warning" key={item.id} onClick={() => handleButtonClick(item)}>
-                  Reaction: {item.why}
-                </Button>
-              ))}
-              {/* Dynamically rendered component */}
-              <div style={{ marginTop: "20px" }}>
-                {activeItem && (
-                  <div
-                    style={{
-                      border: "1px solid black",
-                      padding: "10px",
-                      borderRadius: "5px",
-                    }}
-                  >
-                    <h2>{activeItem.name}</h2>
-                    <p>{activeItem.description}</p>
-                    <Button className="reactionButton" variant="warning" onClick={() => setActiveItem(null)}>
-                      Remove
-                    </Button>
-                  </div>
-                )}
-              </div>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+      {/* Main Content Container */}
+      <Container className="content-container">
+        <h1 className="text-center mb-4">React Bootstrap Template</h1>
+
+        {/* Content with Cards */}
+        <Row>
+          <Col md={4} sm={6} className="mb-4">
+            <Card>
+              <Card.Img variant="top" src="https://via.placeholder.com/300" />
+              <Card.Body>
+                <Card.Title>Card Title 1</Card.Title>
+                <Card.Text>
+                  This is a description of the card. It can hold some information or content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={4} sm={6} className="mb-4">
+            <Card>
+              <Card.Img variant="top" src="https://via.placeholder.com/300" />
+              <Card.Body>
+                <Card.Title>Card Title 2</Card.Title>
+                <Card.Text>
+                  Another card with different content. You can customize each card as needed.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={4} sm={6} className="mb-4">
+            <Card>
+              <Card.Img variant="top" src="https://via.placeholder.com/300" />
+              <Card.Body>
+                <Card.Title>Card Title 3</Card.Title>
+                <Card.Text>
+                  A description for another card. Bootstrap's grid system and cards are easy to use.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+
+        {/* More Cards */}
+        <Row>
+          <Col md={4} sm={6} className="mb-4">
+            <Card>
+              <Card.Img variant="top" src="https://via.placeholder.com/300" />
+              <Card.Body>
+                <Card.Title>Card Title 4</Card.Title>
+                <Card.Text>
+                  Here’s an additional card for testing layout. Cards are very flexible.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={4} sm={6} className="mb-4">
+            <Card>
+              <Card.Img variant="top" src="https://via.placeholder.com/300" />
+              <Card.Body>
+                <Card.Title>Card Title 5</Card.Title>
+                <Card.Text>
+                  More content for testing the footer and sticky behavior.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={4} sm={6} className="mb-4">
+            <Card>
+              <Card.Img variant="top" src="https://via.placeholder.com/300" />
+              <Card.Body>
+                <Card.Title>Card Title 6</Card.Title>
+                <Card.Text>
+                  This is yet another card with sample content. Adjust as necessary.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+
+      {/* Sticky Footer */}
+      <footer className="bg-dark text-white text-center py-3 sticky-footer">
+        <p>&copy; 2025 Sticky Footer Template. All Rights Reserved.</p>
+      </footer>
     </div>
   );
-};
+}
 
-export default StandupOverhook;
+export default App;

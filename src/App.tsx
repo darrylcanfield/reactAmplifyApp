@@ -3,8 +3,8 @@ import Transitions from "./routes/transitions.tsx";
 import About from "./routes/about.tsx";
 import Home from "./routes/home.tsx";
 import MyList from "./routes/myList.tsx";
-import StandupCollarSleeve from "./routes/standupCollarSleeve.tsx";
-import StandupCrossLapel from "./routes/standupCrossLapel.tsx";
+import StandupUnderhook from "./routes/standupUnderhook.tsx";
+import StandupOverhook from "./routes/standupOverhook.tsx";
 import StandupLapelAndElbow from "./routes/standupLapelAndElbow.tsx";
 import PassingHalfGuard from "./routes/passingHalfGuard.tsx";
 import PassingOpenGuard from "./routes/passingOpenGuard.tsx";
@@ -19,24 +19,12 @@ function App() {
   return (
     <main>
       <Navbar /> 
-      <Container>
-      {/* <nav>
-        <h1>links: load</h1>
-        <a href="/">Home</a>
-        <a href="/standup">Standup</a>
-        <a href="/about">About</a>  
-      </nav>
-      <nav>
-      <h1>routes: no load</h1>
-        <Link to="/">Home</Link>
-        <Link to ="/standup">Huge</Link>
-        <Link to="/about">About</Link>  
-      </nav> */}
+      <Container fluid>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/transitions' element={<Transitions />} />
-        <Route path='/standupCollarSleeve' element={<StandupCollarSleeve />} />
-        <Route path='/standupCrossLapel' element={<StandupCrossLapel />} />
+        <Route path='/standupUnderhook' element={<StandupUnderhook />} />
+        <Route path='/standupOverhook' element={<StandupOverhook/>} />
         <Route path='/standupLapelAndElbow' element={<StandupLapelAndElbow/>} />
         <Route path='/passingOpenGuard' element={<PassingOpenGuard />} />
         <Route path='/passingHalfGuard' element={<PassingHalfGuard />} />
@@ -48,6 +36,9 @@ function App() {
         <Route path='/about' element={<About />} />
       </Routes>
       </Container>
+      <footer className="text-center">
+        <p>RealGrappling&copy; </p>
+      </footer>
     </main>
   );
 }
