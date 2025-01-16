@@ -66,14 +66,25 @@ const PassingHalfGuard = () => {
           <Card>
             <Card.Body>
             <Row>
-            <h3>Attacking From Half Guard</h3>
+            <h3>Attacking From Half Guards</h3>
             </Row>
               <Row>
                 <Col>
                     <img className="realimg" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg"/>
                 </Col>
                 <Col>
-                   <strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.
+                   <p><strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.</p>
+                </Col>
+              </Row>
+              <Row>
+                   <h4>Examples</h4>
+                <Col>
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p> 
+                </Col>
+                <Col>
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
                 </Col>
               </Row>
 
@@ -104,6 +115,15 @@ const PassingHalfGuard = () => {
                     <Col><img  className="realimg" src={activeItem.img} /></Col>
                       <Col>
                    <strong>{activeItem.name}: </strong>{activeItem.description}
+                   <Col>
+                    <h4>Examples</h4>
+                    <div>
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
+                    </div>
+                </Col>
                    <Container>
                     <Button
                         variant="primary"
