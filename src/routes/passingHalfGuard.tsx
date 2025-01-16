@@ -66,7 +66,7 @@ const PassingHalfGuard = () => {
           <Card>
             <Card.Body>
             <Row>
-            <h3>Attacking From Half Guards</h3>
+            <h3>Passing Half Guard</h3>
             </Row>
               <Row>
                 <Col>
@@ -100,7 +100,7 @@ const PassingHalfGuard = () => {
               .map((item) => (
                 <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
                   <Button className="reactionButton" variant="warning" onClick={() => handleButtonClick(item)}>
-                    Reaction: {item.why}
+                    <p>Reaction: {item.why}</p>
                   </Button>
                 </Col>
               ))}
@@ -150,13 +150,13 @@ const PassingHalfGuard = () => {
                     {/* Buttons to show data */}
               <Row>
                 <Col>
-                <Button className="reactionButton" variant="success">
-                   {activeItem.b1}
+                <Button className="reactionButton" variant="warning">
+                   <p>{activeItem.b1}</p>
                 </Button>
                 </Col>
                 <Col>
                 <Button className="reactionButton" variant="warning">
-                   {activeItem.b2}
+                   <p>{activeItem.b2}</p>
                 </Button>
                 </Col>
               </Row>
