@@ -33,6 +33,10 @@ const PassingOpenGuard = () => {
                 <div>
                   <strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.
                 </div>
+                <div>
+                  <h3>Examples</h3>
+                  <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Smother Choke (2:13)</a>
+                </div>
               </Card.Text>
 
               {/* Buttons to show data */}

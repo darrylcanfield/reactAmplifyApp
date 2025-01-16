@@ -1,89 +1,50 @@
 import { useState } from "react";
-import type { Schema } from "../../amplify/data/resource";
-import { generateClient } from "aws-amplify/data";
 import data from "../data.json"; // Import the JSON file
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const client = generateClient<Schema>();
-
 // Define the type for items in the data array
 interface DataItem {
-  id: string;
+  id: string;        // Assuming 'id' is a string (use 'number' if it's a number)
   why: string;
   name: string;
   description: string;
-  img: string;
-  b1: string;
-  b2: string;
 }
 
 const AttackingOpenGuard = () => {
   const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
-  const [notification, setNotification] = useState<string | null>(null); // State for notification message
 
-  // Function for creating a todo with activeItem.name
-  function createTodo(content: string) {
-    if (!content.trim()) return; // Prevent creating empty todos
-
-    client.models.Todo.create({ content });
-
-    // Set a success message for a new todo
-    setNotification(`Favorite added: "${content}"`);
-
-    // Clear the notification after 3 seconds
-    setTimeout(() => setNotification(null), 3000);
-  }
-
-  // Handle button click to set the active item
   const handleButtonClick = (item: DataItem) => {
+    // Set the clicked item as the active one
     setActiveItem(item);
   };
 
   return (
     <div style={{ padding: "20px" }}>
-      {/* Display the notification message */}
-      {notification && (
-        <div
-          style={{
-            backgroundColor: "#28a745", // Green background
-            color: "white",
-            padding: "10px",
-            borderRadius: "5px",
-            marginBottom: "10px",
-          }}
-        >
-          {notification}
-        </div>
-      )}
-    
-    <Row>
+      <Row>
         <Col>
           <Card>
-            <Card.Img className="realimg" variant="top" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg" />
+            <Card.Img variant="top" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg" />
             <Card.Body>
-              <Card.Title>Attacking From Half Guard</Card.Title>
+              <Card.Title>Passing Open Guard</Card.Title>
               <Card.Text>
                 <div>
                   <strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.
                 </div>
+                <div>
+                  <h3>Examples</h3>
+                  <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Smother Choke (2:13)</a>
+                </div>
               </Card.Text>
 
               {/* Buttons to show data */}
-              <Row>
-              {data
-              .filter((item) => item.sub === "attackingOpenGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
-              .map((item) => (
-                <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
-                  <Button className="reactionButton" variant="warning" onClick={() => handleButtonClick(item)}>
-                    Reaction: {item.why}
-                  </Button>
-                </Col>
+              {data.map((item) => (
+                <Button className="reactionButton" variant="warning" key={item.id} onClick={() => handleButtonClick(item)}>
+                  Reaction: {item.why}
+                </Button>
               ))}
-              </Row>
-              
               {/* Dynamically rendered component */}
               <div style={{ marginTop: "20px" }}>
                 {activeItem && (
@@ -94,42 +55,11 @@ const AttackingOpenGuard = () => {
                       borderRadius: "5px",
                     }}
                   >
-                  <Row>
-                    <Col><img  className="realimg" src={activeItem.img} /></Col>
-                    <Col><h2>{activeItem.name}</h2></Col>
-                    <Col>
-                      <Button
-                        variant="primary"
-                        onClick={() => {
-                          if (activeItem) {
-                            createTodo(activeItem.name);
-                          } else {
-                            alert("No active item selected");
-                          }
-                        }}
-                      >+Favorite
-                      </Button>
-                    </Col>
-                  </Row>
-
-                  <Row>
-                    <Col> <p>{activeItem.description}</p></Col>
-                  </Row>
-
-                    {/* Buttons to show data */}
-              <Row>
-                <Col>
-                <Button className="reactionButton" variant="warning">
-                   {activeItem.b1}
-                </Button>
-                </Col>
-                <Col>
-                <Button className="reactionButton" variant="warning">
-                   {activeItem.b2}
-                </Button>
-                </Col>
-              </Row>
-
+                    <h2>{activeItem.name}</h2>
+                    <p>{activeItem.description}</p>
+                    <Button className="reactionButton" variant="warning" onClick={() => setActiveItem(null)}>
+                      Remove
+                    </Button>
                   </div>
                 )}
               </div>
