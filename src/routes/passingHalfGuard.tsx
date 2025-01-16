@@ -117,18 +117,11 @@ const PassingHalfGuard = () => {
                     }}
                   >
                   <Row>
-                    <Col><img  className="realimg" src={activeItem.img} /></Col>
-                      <Col>
+                    <Col>
+                    <img  className="realimg" src={activeItem.img} />
+                    </Col>
+                    <Col>
                    <strong>{activeItem.name}: </strong>{activeItem.description}
-                   <Col>
-                    <h4>Examples</h4>
-                    <div>
-                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
-                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
-                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
-                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
-                    </div>
-                </Col>
                    <Container>
                     <Button
                         variant="primary"
@@ -142,13 +135,32 @@ const PassingHalfGuard = () => {
                       >+Favorite
                       </Button>
                   </Container>
-                   
+                   </Col>
+
+                </Row>
+                <Row>
+                <Row>
+                   <h4>Examples</h4>
+                <Col className="square border">
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p> 
                 </Col>
+                <Col className="square border">
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
+                </Col>
+                <Col className="square border">
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
+                </Col>
+              </Row>
+                   
                   </Row>
                   
 
                     {/* Buttons to show data */}
               <Row>
+              <h4>Reactions</h4>
                 <Col>
                 <Button className="reactionButton" variant="warning">
                    <p>{activeItem.b1}</p>
