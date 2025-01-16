@@ -78,11 +78,15 @@ const PassingHalfGuard = () => {
               </Row>
               <Row>
                    <h4>Examples</h4>
-                <Col>
+                <Col className="square border">
                       <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
                       <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p> 
                 </Col>
-                <Col>
+                <Col className="square border">
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
+                </Col>
+                <Col className="square border">
                       <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
                       <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
                 </Col>
@@ -90,6 +94,7 @@ const PassingHalfGuard = () => {
 
               {/* Buttons to show data */}
               <Row>
+              <h4>Reactions</h4>
               {data
               .filter((item) => item.sub === "passingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
               .map((item) => (
