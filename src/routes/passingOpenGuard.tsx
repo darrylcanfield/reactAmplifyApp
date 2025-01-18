@@ -107,7 +107,7 @@ const PassingOpenGuard = () => {
               .filter((item) => item.sub === "passingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
               .map((item) => (
                 <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
-                  <a className="btn btn-main-2 btn-round-full" onClick={() => handleButtonClick(item)}>
+                  <a className="btn btn-main-2 btn-round-full btn-primary" onClick={() => handleButtonClick(item)}>
                     Reaction: {item.why}
                   </a>
                 </Col>
@@ -166,10 +166,10 @@ const PassingOpenGuard = () => {
               <Row>
               <h4>Reactions</h4>
                 <Col>
-                   <p><a className="btn btn-main-2 btn-round-full" href={activeItem.b1l}>{activeItem.b1}</a></p>
+                   <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b1l}>{activeItem.b1}</a></p>
                 </Col>
                 <Col>
-                <p><a className="btn btn-main-2 btn-round-full" href={activeItem.b2l}>{activeItem.b2}</a></p>
+                <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b2l}>{activeItem.b2}</a></p>
                 </Col>
               </Row>
 
