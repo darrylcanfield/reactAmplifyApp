@@ -94,10 +94,6 @@ const PassingHalfGuard = () => {
                       <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
                       <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
                 </Col>
-                <Col className="square border">
-                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
-                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
-                </Col>
               </Row>
 
               {/* Buttons to show data */}
@@ -107,9 +103,9 @@ const PassingHalfGuard = () => {
               .filter((item) => item.sub === "passingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
               .map((item) => (
                 <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
-                  <Button className="reactionButton" variant="warning" onClick={() => handleButtonClick(item)}>
-                    <p>Reaction: {item.why}</p>
-                  </Button>
+                  <a className="btn btn-main-2 btn-round-full btn-primary" onClick={() => handleButtonClick(item)}>
+                    {item.why}
+                  </a>
                 </Col>
               ))}
               </Row>
@@ -166,14 +162,10 @@ const PassingHalfGuard = () => {
               <Row>
               <h4>Reactions</h4>
                 <Col>
-                <Button className="reactionButton" variant="warning">
-                   <p><a href={activeItem.b1l}>{activeItem.b1}</a></p>
-                </Button>
+                   <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b1l}>{activeItem.b1}</a></p>
                 </Col>
                 <Col>
-                <Button className="reactionButton" variant="warning">
-                <p><a href={activeItem.b2l}>{activeItem.b2}</a></p>
-                </Button>
+                <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b2l}>{activeItem.b2}</a></p>
                 </Col>
               </Row>
 
