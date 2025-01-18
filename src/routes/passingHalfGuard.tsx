@@ -128,7 +128,7 @@ const PassingHalfGuard = () => {
                    <strong>{activeItem.name}: </strong>{activeItem.description}
                    <Container>
                     <Button
-                        variant="primary"
+                        variant="warning"
                         onClick={() => {
                           if (activeItem) {
                             createTodo(activeItem.name);
@@ -136,7 +136,7 @@ const PassingHalfGuard = () => {
                             alert("No active item selected");
                           }
                         }}
-                      >+Favorite
+                      >+ Favorite
                       </Button>
                   </Container>
                    </Col>
