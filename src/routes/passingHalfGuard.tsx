@@ -19,6 +19,14 @@ interface DataItem {
   img: string;
   b1: string;
   b2: string;
+  b1l: string;
+  b2l: string;
+  ex1: string;
+  ex1l: string;
+  ex1d: string;
+  ex2: string;
+  ex2l: string
+  ex2d: string;
 }
 
 const PassingHalfGuard = () => {
@@ -142,16 +150,12 @@ const PassingHalfGuard = () => {
                 <Row>
                    <h4>Examples</h4>
                 <Col className="square border">
-                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
-                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p> 
+                      <a href={activeItem.ex1l}>{activeItem.ex1}</a>
+                      <p>{activeItem.ex1d}</p> 
                 </Col>
                 <Col className="square border">
-                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
-                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
-                </Col>
-                <Col className="square border">
-                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
-                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
+                      <a href={activeItem.ex2l}>{activeItem.ex2}</a>
+                      <p>{activeItem.ex2d}</p> 
                 </Col>
               </Row>
                    
@@ -163,12 +167,12 @@ const PassingHalfGuard = () => {
               <h4>Reactions</h4>
                 <Col>
                 <Button className="reactionButton" variant="warning">
-                   <p>{activeItem.b1}</p>
+                   <p><a href={activeItem.b1l}>{activeItem.b1}</a></p>
                 </Button>
                 </Col>
                 <Col>
                 <Button className="reactionButton" variant="warning">
-                   <p>{activeItem.b2}</p>
+                <p><a href={activeItem.b2l}>{activeItem.b2}</a></p>
                 </Button>
                 </Col>
               </Row>

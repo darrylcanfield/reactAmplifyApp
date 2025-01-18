@@ -5,9 +5,17 @@
     "name": "Knee cut (same side / headquarters)",
     "why": "They turn and square up",
     "description": "Knee cut (cross side) from Half Guard",
+    "ex1": "Cross Side Knee Cut (2:13)",
+    "ex1l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex1d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
+    "ex2": "Cross Side Knee Cut (2:13)",
+    "ex2l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex2d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
     "b1": "continue to side control",
+    "b1l": "/passingHalfGuard",
     "b2": "stuck in knee cut",
-    "img": "https://optimg.submeta.io/uploads/6bdb4a29-a623-483b-a6ec-2befae8640b0_1671274158670255576.jpg?auto=format&w=3840&q=60"
+    "b2l": "/passingHalfGuard",
+    "img": "https://preview.redd.it/is-a-saddle-technically-reaping-v0-lo09xhrrizjc1.jpeg?width=1080&crop=smart&auto=webp&s=49cebf8958fe5009d2bd21fa5cdf3b62f34ec1ff"
   },
   {
     "id": "phg2",
@@ -15,8 +23,16 @@
     "name": "Backstep Reap",
     "why": "They turn down, drop their knee",
     "description": "Backstep Reap from Half Guard",
+    "ex1": "Cross Side Knee Cut (2:13)",
+    "ex1l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex1d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
+    "ex2": "Cross Side Knee Cut (2:13)",
+    "ex2l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex2d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
     "b1": "continue to the inside saddle",
+    "b1l": "/passingHalfGuard",
     "b2": "they escape their knee line",
+    "b2l": "/passingOpenGuard",
     "img": "https://preview.redd.it/is-a-saddle-technically-reaping-v0-lo09xhrrizjc1.jpeg?width=1080&crop=smart&auto=webp&s=49cebf8958fe5009d2bd21fa5cdf3b62f34ec1ff"
   },
   {
@@ -25,8 +41,16 @@
     "name": "Double Unders Pass",
     "why": "They bring their leg over the top",
     "description": "Double Unders Pass",
+    "ex1": "Cross Side Knee Cut (2:13)",
+    "ex1l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex1d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
+    "ex2": "Cross Side Knee Cut (2:13)",
+    "ex2l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex2d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
     "b1": "continue to side control",
+    "b1l": "/passingHalfGuard",
     "b2": "they hammer down and force you back to half",
+    "b2l": "/passingOpenGuard",
     "img": "https://www.bjjee.com/wp-content/uploads/2024/04/painful-counter-to-double-underh.jpeg"
   },
   {
@@ -35,8 +59,16 @@
     "name": "Double Unders Pass",
     "why": "They bring their leg over the top",
     "description": "Double Unders Pass",
+    "ex1": "Cross Side Knee Cut (2:13)",
+    "ex1l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex1d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
+    "ex2": "Cross Side Knee Cut (2:13)",
+    "ex2l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex2d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
     "b1": "continue to side control",
+    "b1l": "/passingHalfGuard",
     "b2": "they hammer down and force you back to half",
+    "b2l": "/passingOpenGuard",
     "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
   },
   {
@@ -45,8 +77,16 @@
     "name": "Double Unders Pass1",
     "why": "They bring their leg over the top",
     "description": "Double Unders Pass",
+    "ex1": "Cross Side Knee Cut (2:13)",
+    "ex1l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex1d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
+    "ex2": "Cross Side Knee Cut (2:13)",
+    "ex2l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex2d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
     "b1": "continue to side control",
+    "b1l": "/passingHalfGuard",
     "b2": "they hammer down and force you back to half",
+    "b2l": "/passingOpenGuard",
     "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
   },
   {
@@ -55,8 +95,16 @@
     "name": "Double Unders Pass2",
     "why": "They bring their leg over the top",
     "description": "Double Unders Pass",
+    "ex1": "Cross Side Knee Cut (2:13)",
+    "ex1l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex1d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
+    "ex2": "Cross Side Knee Cut (2:13)",
+    "ex2l": "https://www.youtube.com/watch?v=8UtCiFqwBfQ",
+    "ex2d": "Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials",
     "b1": "continue to side control",
+    "b1l": "/passingHalfGuard",
     "b2": "they hammer down and force you back to half",
+    "b2l": "/passingOpenGuard",
     "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
   }
 ]
