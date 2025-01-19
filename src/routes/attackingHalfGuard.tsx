@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Container } from "react-bootstrap";
 
 const client = generateClient<Schema>();
 
@@ -15,9 +16,18 @@ interface DataItem {
   why: string;
   name: string;
   description: string;
-  img: string;
   b1: string;
   b2: string;
+  b1l: string;
+  b2l: string;
+  ex1: string;
+  ex1l: string;
+  ex1d: string;
+  ex2: string;
+  ex2l: string
+  ex2d: string;
+  video: string;
+  videothumb: string;
 }
 
 const AttackingHalfGuard = () => {
@@ -43,7 +53,8 @@ const AttackingHalfGuard = () => {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <Container fluid>
+      <Row>
       {/* Display the notification message */}
       {notification && (
         <div
@@ -59,27 +70,53 @@ const AttackingHalfGuard = () => {
         </div>
       )}
     
-    <Row>
+    
         <Col>
           <Card>
-            <Card.Img className="realimg" variant="top" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg" />
             <Card.Body>
-              <Card.Title>Attacking From Half Guard</Card.Title>
-              <Card.Text>
-                <div>
-                  <strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.
-                </div>
-              </Card.Text>
+            <Row>
+            <h3>Passing Half Guard</h3>
+            </Row>
+              <Row>
+                <Col>
+                    <video 
+                      src="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.mov"
+                      poster="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png"
+                      className="realimg" 
+                      controls
+                      preload="metadata"
+                    />
+                </Col>
+                <Col>
+                   <p><strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.</p>
+                </Col>
+              </Row>
+              <Row>
+                   <h4>Examples</h4>
+                <Col className="square border">
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p> 
+                </Col>
+                <Col className="square border">
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
+                </Col>
+                <Col className="square border">
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
+                </Col>
+              </Row>
 
               {/* Buttons to show data */}
               <Row>
+              <h4>Reactions</h4>
               {data
-              .filter((item) => item.sub === "attackingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
+              .filter((item) => item.sub === "passingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
               .map((item) => (
                 <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
-                  <Button className="reactionButton" variant="warning" onClick={() => handleButtonClick(item)}>
+                  <a className="btn btn-main-2 btn-round-full btn-primary" onClick={() => handleButtonClick(item)}>
                     Reaction: {item.why}
-                  </Button>
+                  </a>
                 </Col>
               ))}
               </Row>
@@ -89,16 +126,25 @@ const AttackingHalfGuard = () => {
                 {activeItem && (
                   <div
                     style={{
-                      border: "1px solid black",
+                      border: "1px solid",
                       padding: "10px",
                       borderRadius: "5px",
                     }}
                   >
                   <Row>
-                    <Col><img  className="realimg" src={activeItem.img} /></Col>
-                    <Col><h2>{activeItem.name}</h2></Col>
                     <Col>
-                      <Button
+                    <video 
+                      src={activeItem.video}
+                      poster={activeItem.videothumb}
+                      className="realimg" 
+                      controls
+                      preload="metadata"
+                    />
+                    </Col>
+                    <Col>
+                   <strong>{activeItem.name}: </strong>{activeItem.description}
+                   <Container>
+                    <Button
                         variant="primary"
                         onClick={() => {
                           if (activeItem) {
@@ -109,24 +155,34 @@ const AttackingHalfGuard = () => {
                         }}
                       >+Favorite
                       </Button>
-                    </Col>
-                  </Row>
+                  </Container>
+                   </Col>
 
-                  <Row>
-                    <Col> <p>{activeItem.description}</p></Col>
+                </Row>
+                <Row>
+                <Row>
+                   <h4>Examples</h4>
+                <Col className="square border">
+                      <a href={activeItem.ex1l}>{activeItem.ex1}</a>
+                      <p>{activeItem.ex1d}</p> 
+                </Col>
+                <Col className="square border">
+                      <a href={activeItem.ex2l}>{activeItem.ex2}</a>
+                      <p>{activeItem.ex2d}</p> 
+                </Col>
+              </Row>
+                   
                   </Row>
+                  
 
                     {/* Buttons to show data */}
               <Row>
+              <h4>Reactions</h4>
                 <Col>
-                <Button className="reactionButton" variant="warning">
-                   {activeItem.b1}
-                </Button>
+                   <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b1l}>{activeItem.b1}</a></p>
                 </Col>
                 <Col>
-                <Button className="reactionButton" variant="warning">
-                   {activeItem.b2}
-                </Button>
+                <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b2l}>{activeItem.b2}</a></p>
                 </Col>
               </Row>
 
@@ -137,7 +193,7 @@ const AttackingHalfGuard = () => {
           </Card>
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 };
 

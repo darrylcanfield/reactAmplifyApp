@@ -84,7 +84,6 @@ const StandupCrossLapel = () => {
                       poster="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png"
                       className="realimg" 
                       controls
-                      autoPlay
                       preload="metadata"
                     />
                 </Col>
