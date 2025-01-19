@@ -139,7 +139,6 @@ const PassingOpenGuard = () => {
                       poster={activeItem.videothumb}
                       className="realimg" 
                       controls
-                      autoPlay
                       preload="metadata"
                     />
                     </Col>

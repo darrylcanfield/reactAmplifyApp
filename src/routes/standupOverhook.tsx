@@ -139,7 +139,6 @@ const StandupOverhook = () => {
                       poster={activeItem.videothumb}
                       className="realimg" 
                       controls
-                      autoPlay
                       preload="metadata"
                     />
                     </Col>
