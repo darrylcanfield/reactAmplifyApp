@@ -16,7 +16,6 @@ interface DataItem {
   why: string;
   name: string;
   description: string;
-  img: string;
   b1: string;
   b2: string;
   b1l: string;
@@ -27,6 +26,8 @@ interface DataItem {
   ex2: string;
   ex2l: string
   ex2d: string;
+  video: string;
+  videothumb: string;
 }
 
 const PassingOpenGuard = () => {
@@ -78,7 +79,14 @@ const PassingOpenGuard = () => {
             </Row>
               <Row>
                 <Col>
-                    <img className="realimg" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg"/>
+                    <video 
+                      src="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.mov"
+                      poster="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png"
+                      className="realimg" 
+                      controls
+                      autoPlay
+                      preload="metadata"
+                    />
                 </Col>
                 <Col>
                    <p><strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.</p>
@@ -119,14 +127,21 @@ const PassingOpenGuard = () => {
                 {activeItem && (
                   <div
                     style={{
-                      border: "1px solid black",
+                      border: "1px solid",
                       padding: "10px",
                       borderRadius: "5px",
                     }}
                   >
                   <Row>
                     <Col>
-                    <img  className="realimg" src={activeItem.img} />
+                    <video 
+                      src={activeItem.video}
+                      poster={activeItem.videothumb}
+                      className="realimg" 
+                      controls
+                      autoPlay
+                      preload="metadata"
+                    />
                     </Col>
                     <Col>
                    <strong>{activeItem.name}: </strong>{activeItem.description}

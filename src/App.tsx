@@ -18,8 +18,9 @@ import Navbar from "./navbar.tsx";
 function App() {
   return (
     <main>
-      <Navbar /> 
+      
       <Container fluid>
+      <Navbar /> 
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/transitions' element={<Transitions />} />

@@ -15,7 +15,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "stuck in knee cut",
     "b2l": "/passingHalfGuard",
-    "img": "https://preview.redd.it/is-a-saddle-technically-reaping-v0-lo09xhrrizjc1.jpeg?width=1080&crop=smart&auto=webp&s=49cebf8958fe5009d2bd21fa5cdf3b62f34ec1ff"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051.mov"
   },
   {
     "id": "phg2",
@@ -33,7 +34,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "Escape their knee line",
     "b2l": "/passingOpenGuard",
-    "img": "https://preview.redd.it/is-a-saddle-technically-reaping-v0-lo09xhrrizjc1.jpeg?width=1080&crop=smart&auto=webp&s=49cebf8958fe5009d2bd21fa5cdf3b62f34ec1ff"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.mov"
   },
   {
     "id": "phg3",
@@ -51,7 +53,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "Hammer down and force you back to half",
     "b2l": "/passingOpenGuard",
-    "img": "https://www.bjjee.com/wp-content/uploads/2024/04/painful-counter-to-double-underh.jpeg"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
   },
   {
     "id": "aog1",
@@ -69,7 +72,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "Hammer down and force you back to half",
     "b2l": "/passingOpenGuard",
-    "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.mov"
   },
   {
     "id": "aog1",
@@ -87,7 +91,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "Hammer down and force you back to half",
     "b2l": "/passingOpenGuard",
-    "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.mov"
   },
   {
     "id": "aog1",
@@ -105,6 +110,7 @@
     "b1l": "/passingHalfGuard",
     "b2": "Hammer down and force you back to half",
     "b2l": "/passingOpenGuard",
-    "img": "https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjCwWPPylEfmaS7PMJpHdibbaksg"
-  }
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+}
 ]

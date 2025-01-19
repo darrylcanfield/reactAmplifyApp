@@ -16,7 +16,6 @@ interface DataItem {
   why: string;
   name: string;
   description: string;
-  img: string;
   b1: string;
   b2: string;
   b1l: string;
@@ -27,6 +26,8 @@ interface DataItem {
   ex2: string;
   ex2l: string
   ex2d: string;
+  video: string;
+  videothumb: string;
 }
 
 const PassingHalfGuard = () => {
@@ -78,7 +79,14 @@ const PassingHalfGuard = () => {
             </Row>
               <Row>
                 <Col>
-                    <img className="realimg" src="https://i.ytimg.com/vi/Q_WjpBd_Yz8/hq720.jpg"/>
+                    <video 
+                      src="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.mov"
+                      poster="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png"
+                      className="realimg" 
+                      controls
+                      autoPlay
+                      preload="metadata"
+                    />
                 </Col>
                 <Col>
                    <p><strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.</p>
@@ -94,6 +102,10 @@ const PassingHalfGuard = () => {
                       <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
                       <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
                 </Col>
+                <Col className="square border">
+                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
+                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
+                </Col>
               </Row>
 
               {/* Buttons to show data */}
@@ -104,7 +116,7 @@ const PassingHalfGuard = () => {
               .map((item) => (
                 <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
                   <a className="btn btn-main-2 btn-round-full btn-primary" onClick={() => handleButtonClick(item)}>
-                    {item.why}
+                    Reaction: {item.why}
                   </a>
                 </Col>
               ))}
@@ -115,20 +127,26 @@ const PassingHalfGuard = () => {
                 {activeItem && (
                   <div
                     style={{
-                      border: "1px solid black",
+                      border: "1px solid",
                       padding: "10px",
                       borderRadius: "5px",
                     }}
                   >
                   <Row>
                     <Col>
-                    <img  className="realimg" src={activeItem.img} />
+                    <video 
+                      src={activeItem.video}
+                      poster={activeItem.videothumb}
+                      className="realimg" 
+                      controls
+                      preload="metadata"
+                    />
                     </Col>
                     <Col>
                    <strong>{activeItem.name}: </strong>{activeItem.description}
                    <Container>
                     <Button
-                        variant="warning"
+                        variant="primary"
                         onClick={() => {
                           if (activeItem) {
                             createTodo(activeItem.name);
@@ -136,7 +154,7 @@ const PassingHalfGuard = () => {
                             alert("No active item selected");
                           }
                         }}
-                      >+ Favorite
+                      >+Favorite
                       </Button>
                   </Container>
                    </Col>
