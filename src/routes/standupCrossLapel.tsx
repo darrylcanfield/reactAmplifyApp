@@ -22,10 +22,8 @@ interface DataItem {
   b2l: string;
   ex1: string;
   ex1l: string;
-  ex1d: string;
   ex2: string;
   ex2l: string
-  ex2d: string;
   video: string;
   videothumb: string;
 }
@@ -94,17 +92,12 @@ const StandupCrossLapel = () => {
               <Row>
                    <h4>Examples</h4>
                 <Col className="square border">
-                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
-                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p> 
+                <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
                 </Col>
                 <Col className="square border">
-                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
-                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
+                <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
                 </Col>
-                <Col className="square border">
-                      <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Cross Side Knee Cut (2:13) </a>
-                      <p><strong>Dan Manasoiu</strong> vs Damon Ramos | 2023 ADCC East Coast Trials</p>
-                </Col>
+
               </Row>
 
               {/* Buttons to show data */}
@@ -163,12 +156,10 @@ const StandupCrossLapel = () => {
                 <Row>
                    <h4>Examples</h4>
                 <Col className="square border">
-                      <a href={activeItem.ex1l}>{activeItem.ex1}</a>
-                      <p>{activeItem.ex1d}</p> 
+                      <p><a href={activeItem.ex1l}>{activeItem.ex1}</a></p> 
                 </Col>
                 <Col className="square border">
-                      <a href={activeItem.ex2l}>{activeItem.ex2}</a>
-                      <p>{activeItem.ex2d}</p> 
+                      <p><a href={activeItem.ex2l}>{activeItem.ex2}</a></p> 
                 </Col>
               </Row>
                    
