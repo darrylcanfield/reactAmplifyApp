@@ -119,7 +119,7 @@ const PassingOpenGuard = () => {
                 {activeItem && (
                   <div
                     style={{
-                      border: "1px solid",
+                      border: "",
                       padding: "10px",
                       borderRadius: "5px",
                     }}
