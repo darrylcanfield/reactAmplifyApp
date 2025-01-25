@@ -7,7 +7,6 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Container } from "react-bootstrap";
-import StandupCollarSleeve from "./standupCollarSleeve";
 
 const client = generateClient<Schema>();
 
@@ -189,4 +188,4 @@ const StandupCollarElbow = () => {
   );
 };
 
-export default StandupCollarElbow
+export default StandupCollarElbow;
