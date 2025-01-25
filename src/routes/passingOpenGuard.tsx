@@ -73,7 +73,7 @@ const PassingOpenGuard = () => {
           <Card>
             <Card.Body>
             <Row>
-            <h3>Passing Half Guard</h3>
+            <h3>Passing Open Guard:</h3>
             </Row>
               <Row>
                 <Col>
@@ -90,7 +90,7 @@ const PassingOpenGuard = () => {
                 </Col>
               </Row>
               <Row>
-                   <h4>Examples</h4>
+                   <h5>Examples in competition:</h5>
                 <Col className="square border">
                 <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
                 </Col>
@@ -102,13 +102,13 @@ const PassingOpenGuard = () => {
 
               {/* Buttons to show data */}
               <Row>
-              <h4>Reactions</h4>
+              <h5>Choose Your opponent's reaction:</h5>
               {data
               .filter((item) => item.sub === "passingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
               .map((item) => (
                 <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
-                  <a className="btn btn-main-2 btn-round-full btn-primary" onClick={() => handleButtonClick(item)}>
-                    Reaction: {item.why}
+                  <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
+                    {item.why}
                   </a>
                 </Col>
               ))}
@@ -154,7 +154,7 @@ const PassingOpenGuard = () => {
                 </Row>
                 <Row>
                 <Row>
-                   <h4>Examples</h4>
+                  <h5>Examples in competition:</h5>
                 <Col className="square border">
                       <p><a href={activeItem.ex1l}>{activeItem.ex1}</a></p> 
                 </Col>
@@ -168,12 +168,12 @@ const PassingOpenGuard = () => {
 
                     {/* Buttons to show data */}
               <Row>
-              <h4>Reactions</h4>
+              <h5>Choose Your opponent's reaction:</h5>
                 <Col>
-                   <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b1l}>{activeItem.b1}</a></p>
+                   <p><a className="btn btn-main-2 btn-round-full btn-warning" href={activeItem.b1l}>{activeItem.b1}</a></p>
                 </Col>
                 <Col>
-                <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b2l}>{activeItem.b2}</a></p>
+                <p><a className="btn btn-main-2 btn-round-full btn-warning" href={activeItem.b2l}>{activeItem.b2}</a></p>
                 </Col>
               </Row>
 
