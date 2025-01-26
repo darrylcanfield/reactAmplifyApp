@@ -4,7 +4,7 @@ function About () {
 
   return (   
     <div>  
-    <Container>
+    <Container fluid>
       <h4>Grappling... thats real.</h4>
     </Container>
     </div>

@@ -33,7 +33,7 @@ function MyList() {
   }
 
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <Col sm={8}>
           <h4>Learning List: (Click to add or remove)</h4>
