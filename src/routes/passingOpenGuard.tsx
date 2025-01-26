@@ -135,6 +135,17 @@ const PassingOpenGuard = () => {
                       controls
                       preload="metadata"
                     />
+                    <Button
+                        variant="primary"
+                        onClick={() => {
+                          if (activeItem) {
+                            createTodo(activeItem.name);
+                          } else {
+                            alert("No active item selected");
+                          }
+                        }}
+                      >⭐ save
+                      </Button>
                     </Col>
                     <Col>
 
@@ -151,17 +162,7 @@ const PassingOpenGuard = () => {
                       <Row>
                         <Col>
                         <p>{activeItem.description}</p>
-                        <Button
-                        variant="primary"
-                        onClick={() => {
-                          if (activeItem) {
-                            createTodo(activeItem.name);
-                          } else {
-                            alert("No active item selected");
-                          }
-                        }}
-                      >⭐ save
-                      </Button>
+                        
                         </Col>
                         
                       </Row>
