@@ -87,7 +87,7 @@ const PassingOpenGuard = () => {
                 </Col>
                 <Col>
                    <h5><strong>Circling Pass:</strong></h5>
-                   <p>- Upsidedown grip, circling, making your way to a overhook on the head.
+                   <p>Upsidedown grip, circling, making your way to a overhook on the head.
                    </p>
                 </Col>
               </Row>
