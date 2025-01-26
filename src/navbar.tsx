@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <Navbar expand="lg" bg="white" className="fixed-top">
       <Container>
-        <Navbar.Brand href="/"><h2>RealGrappling</h2></Navbar.Brand> 
+        <Navbar.Brand href="/"><h3>RealGrappling</h3></Navbar.Brand> 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
