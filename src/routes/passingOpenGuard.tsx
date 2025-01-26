@@ -73,7 +73,7 @@ const PassingOpenGuard = () => {
           <Card>
             <Card.Body>
             <Row>
-            <h3>Passing Open Guard:</h3>
+            <h3 className="text-center">Passing Open Guard:</h3>
             </Row>
               <Row>
                 <Col>
@@ -92,17 +92,17 @@ const PassingOpenGuard = () => {
               </Row>
               <Row>
                    
-                <Col className="square border">
-                <h5>Examples in competition:</h5>
-                <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
-                <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
+                <Col>
+                <p>Examples in competition:<br />
+                <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a><br />       
+                <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
                 </Col>
 
               </Row>
 
               {/* Buttons to show data */}
               <Row>
-              <h5>Choose Your opponent's reaction:</h5>
+              <h4 className="text-center">Choose Your opponent's reaction:</h4>
               {data
               .filter((item) => item.sub === "passingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
               .map((item) => (
@@ -124,6 +124,7 @@ const PassingOpenGuard = () => {
                       borderRadius: "5px",
                     }}
                   >
+                  <Col className="square border">
                   <Row>
                     <Col>
                     <video 
@@ -139,7 +140,7 @@ const PassingOpenGuard = () => {
                    <Container>
                      <Row>
                      <Col xs={12} sm={12} md={9} lg={9}>
-                      <h5>{activeItem.name}: </h5>
+                     <h5><strong>{activeItem.name}: </strong></h5>
                       </Col>
                       <Col xs={12} sm={12} md={3} lg={3}>
                       <Button
@@ -168,13 +169,9 @@ const PassingOpenGuard = () => {
 
                    </Row>
                 <Row>
-                  <h5>Examples in competition:</h5>
-                <Col className="square border">
-                      <p><a href={activeItem.ex1l}>{activeItem.ex1}</a></p> 
-                </Col>
-                <Col className="square border">
-                      <p><a href={activeItem.ex2l}>{activeItem.ex2}</a></p> 
-                </Col>
+                  <p>Examples in competition:<br />
+                  <a href={activeItem.ex1l}>{activeItem.ex1}</a><br />
+                  <a href={activeItem.ex2l}>{activeItem.ex2}</a></p> 
               </Row>
                    
                   
@@ -182,7 +179,7 @@ const PassingOpenGuard = () => {
 
                     {/* Buttons to show data */}
               <Row>
-              <h5>Choose Your opponent's reaction:</h5>
+              <h4 className="text-center">Choose Your opponent's reaction:</h4>
                 <Col>
                    <p><a className="btn btn-main-2 btn-round-full btn-warning" href={activeItem.b1l}>{activeItem.b1}</a></p>
                 </Col>
@@ -190,7 +187,7 @@ const PassingOpenGuard = () => {
                 <p><a className="btn btn-main-2 btn-round-full btn-warning" href={activeItem.b2l}>{activeItem.b2}</a></p>
                 </Col>
               </Row>
-
+                </Col>
                   </div>
                 )}
               </div>

@@ -40,3 +40,7 @@ a.btn.btn-main-2.btn-round-full.btn-warning {
   padding: .2em !important;
   margin: .2em !important;
 }
+
+.square.border.col {
+  padding: .6em;
+}

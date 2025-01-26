@@ -73,7 +73,7 @@ const PassingHalfGuard = () => {
           <Card>
             <Card.Body>
             <Row>
-            <h3>Passing Half Guard</h3>
+            <h3>Passing Open Guard:</h3>
             </Row>
               <Row>
                 <Col>
@@ -86,15 +86,15 @@ const PassingHalfGuard = () => {
                     />
                 </Col>
                 <Col>
-                   <p><strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.</p>
+                   <h5><strong>Cross side knee cut:</strong></h5>
+                   <p>Getting the instep, keeping the underhook, knee cutting through.</p>
                 </Col>
               </Row>
               <Row>
-                   <h4>Examples</h4>
+                   
                 <Col className="square border">
+                <h5>Examples in competition:</h5>
                 <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
-                </Col>
-                <Col className="square border">
                 <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
                 </Col>
 
@@ -102,13 +102,13 @@ const PassingHalfGuard = () => {
 
               {/* Buttons to show data */}
               <Row>
-              <h4>Reactions</h4>
+              <h5>Choose Your opponent's reaction:</h5>
               {data
               .filter((item) => item.sub === "passingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
               .map((item) => (
                 <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
-                  <a className="btn btn-main-2 btn-round-full btn-primary" onClick={() => handleButtonClick(item)}>
-                    Reaction: {item.why}
+                  <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
+                    {item.why}
                   </a>
                 </Col>
               ))}
@@ -119,7 +119,7 @@ const PassingHalfGuard = () => {
                 {activeItem && (
                   <div
                     style={{
-                      border: "1px solid",
+                      border: "",
                       padding: "10px",
                       borderRadius: "5px",
                     }}
@@ -135,9 +135,14 @@ const PassingHalfGuard = () => {
                     />
                     </Col>
                     <Col>
-                   <strong>{activeItem.name}: </strong>{activeItem.description}
+
                    <Container>
-                    <Button
+                     <Row>
+                     <Col xs={12} sm={12} md={9} lg={9}>
+                      <h5>{activeItem.name}: </h5>
+                      </Col>
+                      <Col xs={12} sm={12} md={3} lg={3}>
+                      <Button
                         variant="primary"
                         onClick={() => {
                           if (activeItem) {
@@ -146,15 +151,24 @@ const PassingHalfGuard = () => {
                             alert("No active item selected");
                           }
                         }}
-                      >+Favorite
+                      >⭐ save
                       </Button>
+                      
+                      </Col>
+                      </Row>
+                      <Row>
+                        <Col>
+                        {activeItem.description}
+                        </Col>
+                      </Row>
+
+                   
                   </Container>
                    </Col>
 
-                </Row>
+                   </Row>
                 <Row>
-                <Row>
-                   <h4>Examples</h4>
+                  <h5>Examples in competition:</h5>
                 <Col className="square border">
                       <p><a href={activeItem.ex1l}>{activeItem.ex1}</a></p> 
                 </Col>
@@ -163,17 +177,17 @@ const PassingHalfGuard = () => {
                 </Col>
               </Row>
                    
-                  </Row>
+                  
                   
 
                     {/* Buttons to show data */}
               <Row>
-              <h4>Reactions</h4>
+              <h5>Choose Your opponent's reaction:</h5>
                 <Col>
-                   <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b1l}>{activeItem.b1}</a></p>
+                   <p><a className="btn btn-main-2 btn-round-full btn-warning" href={activeItem.b1l}>{activeItem.b1}</a></p>
                 </Col>
                 <Col>
-                <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b2l}>{activeItem.b2}</a></p>
+                <p><a className="btn btn-main-2 btn-round-full btn-warning" href={activeItem.b2l}>{activeItem.b2}</a></p>
                 </Col>
               </Row>
 
