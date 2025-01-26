@@ -90,11 +90,10 @@ const PassingOpenGuard = () => {
                 </Col>
               </Row>
               <Row>
-                   <h5>Examples in competition:</h5>
+                   
                 <Col className="square border">
+                <h5>Examples in competition:</h5>
                 <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
-                </Col>
-                <Col className="square border">
                 <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
                 </Col>
 
