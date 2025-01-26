@@ -144,7 +144,14 @@ const PassingOpenGuard = () => {
                      <h5><strong>{activeItem.name}: </strong></h5>
                       </Col>
                       <Col xs={12} sm={12} md={3} lg={3}>
-                      <Button
+                      
+                      
+                      </Col>
+                      </Row>
+                      <Row>
+                        <Col>
+                        <p>{activeItem.description}</p>
+                        <Button
                         variant="primary"
                         onClick={() => {
                           if (activeItem) {
@@ -155,13 +162,8 @@ const PassingOpenGuard = () => {
                         }}
                       >⭐ save
                       </Button>
-                      
-                      </Col>
-                      </Row>
-                      <Row>
-                        <Col>
-                        <p>{activeItem.description}</p>
                         </Col>
+                        
                       </Row>
 
                    
