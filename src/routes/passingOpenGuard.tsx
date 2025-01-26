@@ -87,7 +87,7 @@ const PassingOpenGuard = () => {
                 </Col>
                 <Col>
                    <h5><strong>Circling Pass:</strong></h5>
-                   <p>- Upsidedown grip, circling, making uour way to a overhook on the head. Your head should be pointed at their far shoulder. Drive your weight into them and on the pinned leg.
+                   <p>- Upsidedown grip, circling, making your way to a overhook on the head.
                    </p>
                 </Col>
               </Row>
