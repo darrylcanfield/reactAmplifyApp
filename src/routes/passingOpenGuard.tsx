@@ -78,24 +78,25 @@ const PassingOpenGuard = () => {
               <Row>
                 <Col>
                     <video 
-                      src="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.mov"
-                      poster="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png"
+                      src="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.mov"
+                      poster="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.png"
                       className="realimg" 
                       controls
                       preload="metadata"
                     />
                 </Col>
                 <Col>
-                   <h5><strong>Cross side knee cut:</strong></h5>
-                   <p>Getting the instep, keeping the underhook, knee cutting through.</p>
+                   <h5><strong>Circling Pass:</strong></h5>
+                   <p>- Upsidedown grip, circling, making uour way to a overhook on the head. Your head should be pointed at their far shoulder. Drive your weight into them and on the pinned leg.
+                   </p>
                 </Col>
               </Row>
               <Row>
                    
                 <Col>
                 <p>Examples in competition:<br />
-                <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a><br />       
-                <a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
+                <a href="https://www.youtube.com/watch?v=xnMtsEidnsQ">Andrew Tacket vs Eoghan O'Flanagan (00.05)</a><br />       
+                <a href="https://www.youtube.com/watch?v=5fVQKJ12iHw&t=227s">Andrew Tacket vs Nicky Ryan (00:30)</a></p>       
                 </Col>
 
               </Row>
@@ -159,7 +160,7 @@ const PassingOpenGuard = () => {
                       </Row>
                       <Row>
                         <Col>
-                        {activeItem.description}
+                        <p>{activeItem.description}</p>
                         </Col>
                       </Row>
 
