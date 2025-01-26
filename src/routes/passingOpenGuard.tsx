@@ -135,9 +135,14 @@ const PassingOpenGuard = () => {
                     />
                     </Col>
                     <Col>
-                   <strong>{activeItem.name}: </strong>{activeItem.description}
+
                    <Container>
-                    <Button
+                     <Row>
+                     <Col xs={12} sm={12} md={9} lg={9}>
+                      <h5>{activeItem.name}: </h5>
+                      </Col>
+                      <Col xs={12} sm={12} md={3} lg={3}>
+                      <Button
                         variant="primary"
                         onClick={() => {
                           if (activeItem) {
@@ -148,11 +153,20 @@ const PassingOpenGuard = () => {
                         }}
                       >+Favorite
                       </Button>
+                      
+                      </Col>
+                      </Row>
+                      <Row>
+                        <Col>
+                        {activeItem.description}
+                        </Col>
+                      </Row>
+
+                   
                   </Container>
                    </Col>
 
-                </Row>
-                <Row>
+                   </Row>
                 <Row>
                   <h5>Examples in competition:</h5>
                 <Col className="square border">
@@ -163,7 +177,7 @@ const PassingOpenGuard = () => {
                 </Col>
               </Row>
                    
-                  </Row>
+                  
                   
 
                     {/* Buttons to show data */}
