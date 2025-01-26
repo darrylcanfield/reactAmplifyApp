@@ -86,7 +86,8 @@ const PassingOpenGuard = () => {
                     />
                 </Col>
                 <Col>
-                   <p><strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.</p>
+                   <h5><strong>Cross side knee cut:</strong></h5>
+                   <p>Getting the instep, keeping the underhook, knee cutting through.</p>
                 </Col>
               </Row>
               <Row>
