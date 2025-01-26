@@ -151,7 +151,7 @@ const PassingOpenGuard = () => {
                             alert("No active item selected");
                           }
                         }}
-                      >+Favorite
+                      >⭐ save
                       </Button>
                       
                       </Col>
