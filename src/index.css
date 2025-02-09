@@ -35,9 +35,9 @@ a.navbar-brand {
   margin: .2em;
 }
 
-a.btn.btn-main-2.btn-round-full.btn-warning {
+a.btn.btn-main-2.btn-round-full.btn {
   line-height: .9em !important;
-  padding: .2em !important;
+  padding: .6em !important;
   margin: .2em !important;
 }
 

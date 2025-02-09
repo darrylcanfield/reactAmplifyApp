@@ -103,9 +103,9 @@ const PassingOpenGuard = () => {
 
               {/* Buttons to show data */}
               <Row>
-              <h4 className="text-center">Choose Your opponent's reaction:</h4>
+              <h4 className="text-center">Choose your opponent's reaction:</h4>
               {data
-              .filter((item) => item.sub === "passingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
+              .filter((item) => item.sub === "passingOpenGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
               .map((item) => (
                 <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
                   <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
@@ -166,6 +166,12 @@ const PassingOpenGuard = () => {
                         </Col>
                         
                       </Row>
+                                          {/* Buttons to show data */}
+              <Row>
+                <Col>
+                   <p><a className="btn btn-main-2 btn-round-full btn-success" href={activeItem.b1l}>{activeItem.b1}</a></p>
+                </Col>
+              </Row>
 
                    
                   </Container>
@@ -181,16 +187,7 @@ const PassingOpenGuard = () => {
                   
                   
 
-                    {/* Buttons to show data */}
-              <Row>
-              <h4 className="text-center">Choose Your opponent's reaction:</h4>
-                <Col>
-                   <p><a className="btn btn-main-2 btn-round-full btn-warning" href={activeItem.b1l}>{activeItem.b1}</a></p>
-                </Col>
-                <Col>
-                <p><a className="btn btn-main-2 btn-round-full btn-warning" href={activeItem.b2l}>{activeItem.b2}</a></p>
-                </Col>
-              </Row>
+
                 </Col>
                   </div>
                 )}

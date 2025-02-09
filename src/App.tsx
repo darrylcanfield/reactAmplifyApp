@@ -6,11 +6,13 @@ import MyList from "./routes/myList.tsx";
 import StandupUnderhook from "./routes/standupUnderhook.tsx";
 import StandupOverhook from "./routes/standupOverhook.tsx";
 import StandupLapelAndElbow from "./routes/standupLapelAndElbow.tsx";
-import PassingHalfGuard from "./routes/passingHalfGuard.tsx";
-import PassingOpenGuard from "./routes/passingOpenGuard.tsx";
+import PassingHalfGuardStanding from "./routes/passingHalfGuardStanding.tsx";
+import PassingHalfGuardKneeling from "./routes/passingHalfGuardKneeling.tsx";
+import PassingOpenGuardSupine from "./routes/passingOpenGuardSupine.tsx";
+import PassingOpenGuardSeated from "./routes/passingOpenGuardSeated.tsx";
+import PassingHeadquarters from "./routes/passingHeadquarters.tsx";
 import PassingSingleLegX from "./routes/passingSingleLegX";
 import AttackingHalfGuard from "./routes/attackingHalfGuard.tsx";
-import AttackingOpenGuard from "./routes/attackingOpenGuard.tsx";
 import AttackingSingleLegX from "./routes/attackingSingleLegX.tsx";
 import { Container } from "react-bootstrap";
 import Navbar from "./navbar.tsx";
@@ -27,10 +29,12 @@ function App() {
         <Route path='/standupUnderhook' element={<StandupUnderhook />} />
         <Route path='/standupOverhook' element={<StandupOverhook/>} />
         <Route path='/standupLapelAndElbow' element={<StandupLapelAndElbow/>} />
-        <Route path='/passingOpenGuard' element={<PassingOpenGuard />} />
-        <Route path='/passingHalfGuard' element={<PassingHalfGuard />} />
+        <Route path='/passingOpenGuardSupine' element={<PassingOpenGuardSupine />} />
+        <Route path='/passingOpenGuardSeated' element={<PassingOpenGuardSeated />} />
+        <Route path='/passingHeadquarters' element={<PassingHeadquarters />} />
+        <Route path='/passingHalfGuardStanding' element={<PassingHalfGuardStanding />} />
+        <Route path='/passingHalfGuardKneeling' element={<PassingHalfGuardKneeling />} />
         <Route path='/passingSingleLegX' element={<PassingSingleLegX />} />
-        <Route path='/attackingOpenGuard' element={<AttackingOpenGuard />} />
         <Route path='/attackingHalfGuard' element={<AttackingHalfGuard />} />
         <Route path='/attackingSingleLegX' element={<AttackingSingleLegX/>} />
         <Route path='/myList' element={<MyList />} />

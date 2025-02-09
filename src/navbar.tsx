@@ -20,9 +20,12 @@ function NavBar() {
               <NavDropdown.Divider />
             </NavDropdown>
             <NavDropdown title="Guard Passing" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/passingOpenGuard">Pass Open Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/passingHalfGuard">Pass Half Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/passingSingleLegX">Pass Single Leg X</NavDropdown.Item>
+            <NavDropdown.Item href="/passingSingleLegX">Pass Single Leg X</NavDropdown.Item>
+              <NavDropdown.Item href="/passingOpenGuardSupine">Pass Open Guard (Supine)</NavDropdown.Item>
+              <NavDropdown.Item href="/passingOpenGuardSeated">Pass Open Guard (Seated)</NavDropdown.Item>
+              <NavDropdown.Item href="/passingHalfGuardStanding">Pass Half Guard (Standing)</NavDropdown.Item>
+              <NavDropdown.Item href="/passingHalfGuardKneeling">Pass Half Guard (Kneeling)</NavDropdown.Item>
+              <NavDropdown.Item href="/passingHeadquarters">Pass Headquarters</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
             <NavDropdown title="Guard Attacks" id="basic-nav-dropdown">
