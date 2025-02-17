@@ -1,0 +1,165 @@
+{
+    "pogSu0": [
+      {
+        "sub": "passing",
+        "name": "Circling Pass",
+        "why": "They put you back in Open Guard Passing",
+        "description": "Upsidedown grip, circling, making your way to a overhook on the head.",
+        "ex1": "",
+        "ex1l": "",
+        "ex2": "",
+        "ex2l": "",
+        "b1": "Nothing, you pass to side control",
+        "b1l": "/attackingSideControl",
+        "b2": "They frame and square up, creating a Leg Drag fight",
+        "b2l": "/legDrag",
+        "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+        "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+      }
+    ],
+    "pogSu1": [
+      {
+        "sub": "passingOpenGuardSupine",
+        "name": "Far Side Leg Drag",
+        "why": "They frame, turn, and square up with you",
+        "description": "As they frame and start to square up, drive them over to the leg drag on the far side.",
+        "ex1": "",
+        "ex1l": "",
+        "ex2": "",
+        "ex2l": "",
+        "b1": "Continue to Leg Drag",
+        "b1l": "/attackingSideControl",
+        "b2": "They frame and square up, creating a Leg Drag fight",
+        "b2l": "/legDrag",
+        "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+        "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+      }
+    ],
+    "pogSu2": [
+      {
+        "sub": "passingOpenGuardSupine",
+        "name": "Duck Under",
+        "why": "They bring there leg over the top and try to collect your knee",
+        "description": "Keep pinning the bottom leg down, while you duck under the top leg and pass on the other side.",
+        "ex1": "",
+        "ex1l": "",
+        "ex2": "",
+        "ex2l": "",
+        "b1": "Continue to Side Control",
+        "b1l": "/attackingSideControl",
+        "b2": "They pass their leg over you head, putting you in Double Unders Pass",
+        "b2l": "/passingHalfGuard",
+        "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png",
+        "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.mov"
+      }
+    ],
+    "pogSu3": [
+      {
+        "sub": "passingOpenGuardSupine",
+        "name": "Crab Ride",
+        "why": "They invert through to a Kiss of the Dragon back take",
+        "description": "As they invert through for the KoD back take, you counter by diving through to a crab ride.",
+        "ex1": "",
+        "ex1l": "",
+        "ex2": "",
+        "ex2l": "",
+        "b1": "Continue to CrabRide",
+        "b1l": "/passingHalfGuard",
+        "b2": "They invert, putting you in a Crab Ride fight",
+        "b2l": "/passingHalfGuard",
+        "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051.png",
+        "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051.mov"
+      }
+    ],
+    "pogSe0": [
+      {
+        "sub": "passing",
+        "name": "Shoulder Push Foot Lift",
+        "why": "They are playing defence in Seated Guard",
+        "description": "Shoulder push, 2 on 1 grip on the foot, pulling and lifting.",
+        "ex1": "",
+        "ex1l": "",
+        "ex2": "",
+        "ex2l": "",
+        "b1": "",
+        "b1l": "/attackingSideControl",
+        "b2": "",
+        "b2l": "/legDrag",
+        "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+        "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+      }
+    ],
+    "pogSe1": [
+      {
+        "sub": "passingOpenGuardSeated",
+        "name": "Nearside Knee Cut",
+        "why": "They over-extend their leg, reaching in HG",
+        "description": "As they over-extend their leg reaching for a connection, knee cut through.",
+        "ex1": "",
+        "ex1l": "",
+        "ex2": "",
+        "ex2l": "",
+        "b1": "Continue to Leg Drag",
+        "b1l": "/attackingSideControl",
+        "b2": "They frame and square up, creating a Leg Drag fight",
+        "b2l": "/legDrag",
+        "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+        "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+      }
+    ],
+    "pogSe2": [
+      {
+        "sub": "passingOpenGuardSeated",
+        "name": "Kimura",
+        "why": "They over-extend their arm, reaching in HG",
+        "description": "As they over-extend their arm reaching for your knee, reach over and jump the kimura.",
+        "ex1": "",
+        "ex1l": "",
+        "ex2": "",
+        "ex2l": "",
+        "b1": "Continue to Side Control",
+        "b1l": "/attackingSideControl",
+        "b2": "They pass their leg over you head, putting you in Double Unders Pass",
+        "b2l": "/passingHalfGuard",
+        "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png",
+        "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.mov"
+      }
+    ],
+    "pogSe3": [
+      {
+        "sub": "passingOpenGuardSeated",
+        "name": "Winshield Wiper",
+        "why": "They repummel the foot to Shin to Shin",
+        "description": "As they repummel the foot to Shin to Shin, windshield wiper your foot inside.",
+        "ex1": "",
+        "ex1l": "",
+        "ex2": "",
+        "ex2l": "",
+        "b1": "Continue to CrabRide",
+        "b1l": "/passingHalfGuard",
+        "b2": "They invert, putting you in a Crab Ride fight",
+        "b2l": "/passingHalfGuard",
+        "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051.png",
+        "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051.mov"
+      }
+    ],
+    "phgs0": [
+      {
+        "sub": "passing",
+        "name": "Knee Cut (near side)",
+        "why": "They put you back in Half Guard",
+        "description": "Crushing the knee down, connecting your hands underneath, and smash passing through.",
+        "ex1": "",
+        "ex1l": "",
+        "ex2": "",
+        "ex2l": "",
+        "b1": "Nothing, you pass to side control",
+        "b1l": "/passingHalfGuard",
+        "b2": "You get put back in standard half-guard",
+        "b2l": "/passingHalfGuard",
+        "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.png",
+        "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.mov"
+      }
+    ]
+  }
+  

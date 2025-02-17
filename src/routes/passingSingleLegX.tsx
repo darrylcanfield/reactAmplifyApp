@@ -33,111 +33,136 @@ const passingSingleLegX = () => {
   const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
   const [notification, setNotification] = useState<string | null>(null); // State for notification message
 
-  // Function for creating a todo with activeItem.name
-  function createTodo(content: string) {
-    if (!content.trim()) return; // Prevent creating empty todos
-
-    client.models.Todo.create({ content });
-
-    // Set a success message for a new todo
-    setNotification(`Favorite added: "${content}"`);
-
-    // Clear the notification after 3 seconds
-    setTimeout(() => setNotification(null), 3000);
-  }
-
-  // Handle button click to set the active item
-  const handleButtonClick = (item: DataItem) => {
-    setActiveItem(item);
-  };
-
-  // Function for creating a todo with a fixed content value
-function createTodo2() {
-  const content = "Shoulder Push Foot Lift"; // Set content explicitly
-  
+ // Function for creating a todo with activeItem.name
+ function createTodo(content: string) {
+  if (!content.trim()) return; // Prevent creating empty todos
   client.models.Todo.create({ content });
-
   // Set a success message for a new todo
   setNotification(`Favorite added: "${content}"`);
-
   // Clear the notification after 3 seconds
   setTimeout(() => setNotification(null), 3000);
+}
+
+// Handle button click to set the active item
+const handleButtonClick = (item: DataItem) => {
+  setActiveItem(item);
+};
+
+// Find the item with the specific id
+const targetId = "pslx0";
+const targetItem = data.find((item) => item.id === targetId);
+// If the item is not found, display a message
+if (!targetItem) {
+  return <div>Item with ID "{targetId}" not found.</div>;
+}
+// Create a variable "targetName" that holds the value of item.name
+const targetName = targetItem.name;
+// Function for creating a todo with the value of targetName as content
+function createTodo2() {
+  const content = targetName; // Set content to the value of targetName
+  client.models.Todo.create({ content });
+  // Set a success message for a new todo
+  setNotification(`Favorite added: "${content}"`);
+  // Clear the notification after 3 seconds
+  setTimeout(() => setNotification(""), 3000);
 }
 
   return (
     <Container fluid>
       <Row>
-      {/* Display the notification message */}
-      {notification && (
-        <div  
-          style={{
-            backgroundColor: "#28a745", // Green background
-            color: "white",
-            padding: "10px",
-            borderRadius: "5px",
-            marginBottom: "10px",
-          }}
-        >
-          {notification}
-        </div>
-      )}
-    
-    
+        {/* Display the notification message */}
+        {notification && (
+          <div
+            style={{
+              backgroundColor: "#28a745", // Green background
+              color: "white",
+              padding: "10px",
+              borderRadius: "5px",
+              marginBottom: "10px",
+            }}
+          >
+            {notification}
+          </div>
+        )}
+        </Row>
+        <Row>
         <Col>
           <Card>
             <Card.Body>
-            <Row>
-            <h3 className="text-center">Passing Single Leg X:</h3>
-            </Row>
               <Row>
-                <Col>
-                    <video 
-                      src="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.mov"
-                      poster="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.png"
-                      className="realimg" 
-                      controls
-                      preload="metadata"
-                    />
-                </Col>
-                <Col>
-                <h5><strong>LongStep Pass:</strong></h5>
-                   <p>Overhook belt grip, force the foot down, backstep long step.
-                   </p>
-                   <Button
-  variant="primary"
-  onClick={() => {
-    createTodo2(); // Always creates "Circling Pass"
-  }}
->
-  ⭐ save
-</Button>
-                </Col>
-                
+                <h3 className="text-center">{targetItem.sub}:</h3>
               </Row>
               <Row>
-                   
-              <Col>
-                <p>Examples in competition:<br />
-                <a href="https://www.youtube.com/watch?v=xnMtsEidnsQ">x (00.05)</a><br />       
-                <a href="https://www.youtube.com/watch?v=5fVQKJ12iHw&t=227s">x (00:30)</a></p>       
+
+                <Col>
+                  <video
+                    src={targetItem.video}
+                    poster={targetItem.videothumb}
+                    className="realimg"
+                    controls
+                    preload="metadata"
+                  />
+                  <p>Examples in competition:<br />
+                    <a href={targetItem.ex1l}>{targetItem.ex1}</a><br />
+                    <a href={targetItem.ex2l}>{targetItem.ex2}</a>
+                  </p>
                 </Col>
-
+                <Col>
+                  <Row>
+                  <Col xs={12} sm={12} md={9} lg={10}>
+                  <h5><strong>{targetItem.name}</strong></h5>
+                  <p>{targetItem.description}
+                  </p>
+                  <a className="btn btn-main-2 btn-round-full btn-success" href={targetItem.b1l}>{targetItem.b1}</a>
+                  </Col>
+                  <Col xs={12} sm={12} md={3} lg={2}>
+                  <Button
+                    variant="primary"
+                    onClick={() => {
+                      createTodo2(); // Always creates "Circling Pass"
+                    }}
+                  >
+                    ⭐ save
+                  </Button>
+                  </Col>
+                  </Row>
+                </Col>
               </Row>
-
+              <Row>
+                <Col>
+                  
+                </Col>
+              </Row>
               {/* Buttons to show data */}
               <Row>
-              <h4 className="text-center">Choose your opponent's reaction:</h4>
-              {data
-              .filter((item) => item.sub === "passingSingleLegX")  // Filter items where 'sub' equals "attackingOpenGuard"
-              .map((item) => (
-                <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
-                  <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
-                    {item.why}
-                  </a>
-                </Col>
-              ))}
+                <h4 className="text-center">Choose your opponent's reaction:</h4>
+                  
+                {data
+                  .filter((item) => item.sub === "passingSingleLegX")  // Filter items where 'sub' equals "attackingOpenGuard"
+                  .map((item) => (
+                    <Col xs={6} sm={6} md={3} lg={3} key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
+                      <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
+                        {item.why}
+                      </a>
+                    </Col>
+                  ))}
               </Row>
-              
+              <Row>
+                {/* Display the notification message */}
+                {notification && (
+                  <div
+                    style={{
+                      backgroundColor: "#28a745", // Green background
+                      color: "white",
+                      padding: "10px",
+                      borderRadius: "5px",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    {notification}
+                  </div>
+                )}
+                </Row>
               {/* Dynamically rendered component */}
               <div style={{ marginTop: "20px" }}>
                 {activeItem && (
@@ -148,70 +173,48 @@ function createTodo2() {
                       borderRadius: "5px",
                     }}
                   >
-                  <Col className="square border">
-                  <Row>
-                    <Col>
-                    <video 
-                      src={activeItem.video}
-                      poster={activeItem.videothumb}
-                      className="realimg" 
-                      controls
-                      preload="metadata"
-                    />
-                    <Button
-                        variant="primary"
-                        onClick={() => {
-                          if (activeItem) {
-                            createTodo(activeItem.name);
-                          } else {
-                            alert("No active item selected");
-                          }
-                        }}
-                      >⭐ save
-                      </Button>
-                    </Col>
-                    <Col>
-
-                   <Container>
-                     <Row>
-                     <Col xs={12} sm={12} md={9} lg={9}>
-                     <h5><strong>{activeItem.name}: </strong></h5>
-                      </Col>
-                      <Col xs={12} sm={12} md={3} lg={3}>
-                      
-                      
-                      </Col>
-                      </Row>
+                    <Col className="square border">
                       <Row>
                         <Col>
-                        <p>{activeItem.description}</p>
-                        
+                          <video
+                            src={activeItem.video}
+                            poster={activeItem.videothumb}
+                            className="realimg"
+                            controls
+                            preload="metadata"
+                          />
+                          <p>Examples in competition:<br />
+                          <a href={activeItem.ex1l}>{activeItem.ex1}</a><br />
+                          <a href={activeItem.ex2l}>{activeItem.ex2}</a></p> 
                         </Col>
-                        
-                      </Row>
-                                          {/* Buttons to show data */}
-              <Row>
-                <Col>
-                   <p><a className="btn btn-main-2 btn-round-full btn-success" href={activeItem.b1l}>{activeItem.b1}</a></p>
-                </Col>
-              </Row>
-
-                   
-                  </Container>
-                   </Col>
-
-                   </Row>
-                <Row>
-                  <p>Examples in competition:<br />
-                  <a href={activeItem.ex1l}>{activeItem.ex1}</a><br />
-                  <a href={activeItem.ex2l}>{activeItem.ex2}</a></p> 
-              </Row>
-                   
-                  
-                  
-
-
-                </Col>
+                        <Col>
+                            <Row>
+                              <Col xs={12} sm={12} md={9} lg={9}>
+                                <h5><strong>{activeItem.name}: </strong></h5>
+                                <p>{activeItem.description}</p>
+                              </Col>
+                              <Col xs={12} sm={12} md={3} lg={3}>
+                              <Button
+                                  variant="primary"
+                                  onClick={() => {
+                                    if (activeItem) {
+                                      createTodo(activeItem.name);
+                                    } else {
+                                      alert("No active item selected");
+                                    }
+                                  }}
+                                >⭐ save
+                                </Button>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col>
+                                <p><a className="btn btn-main-2 btn-round-full btn-success" href={activeItem.b1l}>{activeItem.b1}</a></p>
+                              </Col>    
+                            </Row>
+                        </Col>
+                      </Row>  
+                    </Col>
                   </div>
                 )}
               </div>

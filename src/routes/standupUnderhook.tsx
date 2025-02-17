@@ -28,7 +28,8 @@ interface DataItem {
   videothumb: string;
 }
 
-const StandupUnderhook = () => {
+const passingHalfGuardKneeling = () => {
+
   const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
   const [notification, setNotification] = useState<string | null>(null); // State for notification message
 
@@ -50,133 +51,168 @@ const StandupUnderhook = () => {
     setActiveItem(item);
   };
 
+  // Function for creating a todo with a fixed content value
+  function createTodo2() {
+    const content = "Body Lock KneeCut"; // Set content explicitly
+
+    client.models.Todo.create({ content });
+
+    // Set a success message for a new todo
+    setNotification(`Favorite added: "${content}"`);
+
+    // Clear the notification after 3 seconds
+    setTimeout(() => setNotification(null), 3000);
+  }
+
   return (
     <Container fluid>
       <Row>
-      {/* Display the notification message */}
-      {notification && (
-        <div
-          style={{
-            backgroundColor: "#28a745", // Green background
-            color: "white",
-            padding: "10px",
-            borderRadius: "5px",
-            marginBottom: "10px",
-          }}
-        >
-          {notification}
-        </div>
-      )}
-    
-    
+        {/* Display the notification message */}
+        {notification && (
+          <div
+            style={{
+              backgroundColor: "#28a745", // Green background
+              color: "white",
+              padding: "10px",
+              borderRadius: "5px",
+              marginBottom: "10px",
+            }}
+          >
+            {notification}
+          </div>
+        )}
+        </Row>
+        <Row>
         <Col>
           <Card>
             <Card.Body>
-            <Row>
-            <h3>Passing Half Guard</h3>
-            </Row>
               <Row>
+                <h3 className="text-center">Passing Half-Guard (Kneeling):</h3>
+              </Row>
+              <Row>
+
                 <Col>
-                    <video 
-                      src="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.mov"
-                      poster="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png"
-                      className="realimg" 
-                      controls
-                      preload="metadata"
-                    />
+                  <video
+                    src="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.mov"
+                    poster="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.png"
+                    className="realimg"
+                    controls
+                    preload="metadata"
+                  />
+                  <p>Examples in competition:<br />
+                    <a href="https://www.youtube.com/watch?v=xnMtsEidnsQ">x (00.05)</a><br />
+                    <a href="https://www.youtube.com/watch?v=5fVQKJ12iHw&t=227s">x (00:30)</a>
+                  </p>
                 </Col>
                 <Col>
-                   <p><strong>Cross side knee cut:</strong> Getting the instep, keeping the underhook, knee cutting through.</p>
+                  <Row>
+                  <Col xs={12} sm={12} md={9} lg={10}>
+                  <h5><strong>Body Lock KneeCut:</strong></h5>
+                  <p>Smash their knee, body lock, get instep, nearside KneeCut.
+                  </p>
+                  </Col>
+                  <Col xs={12} sm={12} md={3} lg={2}>
+                  <Button
+                    variant="primary"
+                    onClick={() => {
+                      createTodo2(); // Always creates "Circling Pass"
+                    }}
+                  >
+                    ⭐ save
+                  </Button>
+                  </Col>
+                  </Row>
                 </Col>
               </Row>
               <Row>
-                   <h4>Examples</h4>
-                <Col className="square border">
-                <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
+                <Col>
+                  
                 </Col>
-                <Col className="square border">
-                <p><a href="https://www.youtube.com/watch?v=8UtCiFqwBfQ">Dan Manasoiu vs Damon Ramos | 2023 ADCC East Coast Trials (2:13)</a></p>       
-                </Col>
-
               </Row>
-
               {/* Buttons to show data */}
               <Row>
-              <h4>Reactions</h4>
-              {data
-              .filter((item) => item.sub === "passingHalfGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
-              .map((item) => (
-                <Col key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
-                  <a className="btn btn-main-2 btn-round-full btn-primary" onClick={() => handleButtonClick(item)}>
-                    Reaction: {item.why}
-                  </a>
-                </Col>
-              ))}
+                <h4 className="text-center">Choose your opponent's reaction:</h4>
+                  <Col> 
+                  <a className="btn btn-main-2 btn-round-full btn-success" href="/attackingSideControl">Nothing: Continue to Side Control</a>
+                  </Col>
+                {data
+                  .filter((item) => item.sub === "passingHalfGuardKneeling")  // Filter items where 'sub' equals "attackingOpenGuard"
+                  .map((item) => (
+                    <Col xs={6} sm={6} md={3} lg={3} key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
+                      <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
+                        {item.why}
+                      </a>
+                    </Col>
+                  ))}
               </Row>
-              
+              <Row>
+                {/* Display the notification message */}
+                {notification && (
+                  <div
+                    style={{
+                      backgroundColor: "#28a745", // Green background
+                      color: "white",
+                      padding: "10px",
+                      borderRadius: "5px",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    {notification}
+                  </div>
+                )}
+                </Row>
               {/* Dynamically rendered component */}
               <div style={{ marginTop: "20px" }}>
                 {activeItem && (
                   <div
                     style={{
-                      border: "1px solid",
+                      border: "",
                       padding: "10px",
                       borderRadius: "5px",
                     }}
                   >
-                  <Row>
-                    <Col>
-                    <video 
-                      src={activeItem.video}
-                      poster={activeItem.videothumb}
-                      className="realimg" 
-                      controls
-                      preload="metadata"
-                    />
+                    <Col className="square border">
+                      <Row>
+                        <Col>
+                          <video
+                            src={activeItem.video}
+                            poster={activeItem.videothumb}
+                            className="realimg"
+                            controls
+                            preload="metadata"
+                          />
+                          <p>Examples in competition:<br />
+                          <a href={activeItem.ex1l}>{activeItem.ex1}</a><br />
+                          <a href={activeItem.ex2l}>{activeItem.ex2}</a></p> 
+                        </Col>
+                        <Col>
+                            <Row>
+                              <Col xs={12} sm={12} md={9} lg={9}>
+                                <h5><strong>{activeItem.name}: </strong></h5>
+                                <p>{activeItem.description}</p>
+                              </Col>
+                              <Col xs={12} sm={12} md={3} lg={3}>
+                              <Button
+                                  variant="primary"
+                                  onClick={() => {
+                                    if (activeItem) {
+                                      createTodo(activeItem.name);
+                                    } else {
+                                      alert("No active item selected");
+                                    }
+                                  }}
+                                >⭐ save
+                                </Button>
+                              </Col>
+                            </Row>
+                            <Row>
+                              <Col>
+                                <p><a className="btn btn-main-2 btn-round-full btn-success" href={activeItem.b1l}>{activeItem.b1}</a></p>
+                              </Col>    
+                            </Row>
+                        </Col>
+                      </Row>  
                     </Col>
-                    <Col>
-                   <strong>{activeItem.name}: </strong>{activeItem.description}
-                   <Container>
-                    <Button
-                        variant="primary"
-                        onClick={() => {
-                          if (activeItem) {
-                            createTodo(activeItem.name);
-                          } else {
-                            alert("No active item selected");
-                          }
-                        }}
-                      >+Favorite
-                      </Button>
-                  </Container>
-                   </Col>
-
-                </Row>
-                <Row>
-                <Row>
-                   <h4>Examples</h4>
-                <Col className="square border">
-                      <p><a href={activeItem.ex1l}>{activeItem.ex1}</a></p> 
-                </Col>
-                <Col className="square border">
-                      <p><a href={activeItem.ex2l}>{activeItem.ex2}</a></p> 
-                </Col>
-              </Row>
-                   
-                  </Row>
-                  
-
-                    {/* Buttons to show data */}
-              <Row>
-              <h4>Reactions</h4>
-                <Col>
-                   <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b1l}>{activeItem.b1}</a></p>
-                </Col>
-                <Col>
-                <p><a className="btn btn-main-2 btn-round-full btn-primary" href={activeItem.b2l}>{activeItem.b2}</a></p>
-                </Col>
-              </Row>
-
                   </div>
                 )}
               </div>
@@ -188,4 +224,4 @@ const StandupUnderhook = () => {
   );
 };
 
-export default StandupUnderhook;
+export default passingHalfGuardKneeling;

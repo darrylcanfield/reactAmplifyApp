@@ -30,7 +30,7 @@ interface DataItem {
   videothumb: string;
 }
 
-const passingHalfGuardKneeling = () => {
+const attackingDeLaRiva = () => {
 
   const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
   const [notification, setNotification] = useState<string | null>(null); // State for notification message
@@ -51,7 +51,7 @@ const handleButtonClick = (item: DataItem) => {
 };
 
 // Find the item with the specific id
-const targetId = "phgk0";
+const targetId = "adlr0";
 const targetItem = data.find((item) => item.id === targetId);
 // If the item is not found, display a message
 if (!targetItem) {
@@ -140,7 +140,7 @@ function createTodo2() {
                 <h4 className="text-center">Choose your opponent's reaction:</h4>
                   
                 {data
-                  .filter((item) => item.sub === "passingHalfGuardKneeling")  // Filter items where 'sub' equals "attackingOpenGuard"
+                  .filter((item) => item.sub === "attackingDeLaRiva")  // Filter items where 'sub' equals "attackingOpenGuard"
                   .map((item) => (
                     <Col xs={6} sm={6} md={3} lg={3} key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
                       <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
@@ -228,4 +228,4 @@ function createTodo2() {
   );
 };
 
-export default passingHalfGuardKneeling;
+export default attackingDeLaRiva;
