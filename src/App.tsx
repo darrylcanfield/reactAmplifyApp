@@ -45,8 +45,8 @@ import AttackingReverseXGuard from "./routes/attackingReverseXGuard.tsx";
 import AttackingShinToShin from "./routes/attackingShinToShin.tsx";
 import AttackingSideControl from "./routes/attackingSideControl.tsx";
 import AttackingSingleLegX from "./routes/attackingSingleLegX.tsx";
-import AttackingTurtle from "./routes/AttackingTurtle.tsx";
-import AttackingBack from "./routes/AttackingBack.tsx";
+import AttackingTurtle from "./routes/attackingTurtle.tsx";
+import AttackingBack from "./routes/attackingBack.tsx";
 
 function App() {
   return (
@@ -57,11 +57,13 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/transitions' element={<Transitions />} />
+        <Route path='/myList' element={<MyList />} />
+        <Route path='/about' element={<About />} />
 
         <Route path='/attacking5050' element={<Attacking5050 />} />
         <Route path='/attackingButterflyGuard' element={<AttackingButterflyGuard/>} />
         <Route path='/attackingChoiGuard' element={<AttackingChoiGuard/>} />
-        <Route path='/attackingClosedGuard' element={<AttackingSingleLegX/>} />
+        <Route path='/attackingClosedGuard' element={<AttackingClosedGuard/>} />
         <Route path='/attackingCrabRide' element={<AttackingCrabRide/>} />
         <Route path='/attackingDeLaRiva' element={<AttackingDeLaRiva/>} />
         <Route path='/attackingHalfButterfly' element={<AttackingHalfButterfly/>} />
@@ -100,8 +102,6 @@ function App() {
         <Route path='/passingHalfButterfly' element={<PassingHalfButterfly />} />
         <Route path='/passingSingleLegX' element={<PassingSingleLegX />} />
 
-        <Route path='/myList' element={<MyList />} />
-        <Route path='/about' element={<About />} />
       </Routes>
       </Container>
       <footer className="text-center">

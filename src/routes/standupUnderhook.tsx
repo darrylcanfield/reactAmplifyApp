@@ -8,6 +8,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Container } from "react-bootstrap";
 
+// *** Change targetId, item.sub, and the export and function ***
+
 const client = generateClient<Schema>();
 
 // Define the type for items in the data array
@@ -28,41 +30,44 @@ interface DataItem {
   videothumb: string;
 }
 
-const passingHalfGuardKneeling = () => {
+const StandupUnderhook = () => {
 
   const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
   const [notification, setNotification] = useState<string | null>(null); // State for notification message
 
-  // Function for creating a todo with activeItem.name
-  function createTodo(content: string) {
-    if (!content.trim()) return; // Prevent creating empty todos
+ // Function for creating a todo with activeItem.name
+ function createTodo(content: string) {
+  if (!content.trim()) return; // Prevent creating empty todos
+  client.models.Todo.create({ content });
+  // Set a success message for a new todo
+  setNotification(`Favorite added: "${content}"`);
+  // Clear the notification after 3 seconds
+  setTimeout(() => setNotification(null), 3000);
+}
 
-    client.models.Todo.create({ content });
+// Handle button click to set the active item
+const handleButtonClick = (item: DataItem) => {
+  setActiveItem(item);
+};
 
-    // Set a success message for a new todo
-    setNotification(`Favorite added: "${content}"`);
-
-    // Clear the notification after 3 seconds
-    setTimeout(() => setNotification(null), 3000);
-  }
-
-  // Handle button click to set the active item
-  const handleButtonClick = (item: DataItem) => {
-    setActiveItem(item);
-  };
-
-  // Function for creating a todo with a fixed content value
-  function createTodo2() {
-    const content = "Body Lock KneeCut"; // Set content explicitly
-
-    client.models.Todo.create({ content });
-
-    // Set a success message for a new todo
-    setNotification(`Favorite added: "${content}"`);
-
-    // Clear the notification after 3 seconds
-    setTimeout(() => setNotification(null), 3000);
-  }
+// Find the item with the specific id
+const targetId = "phgk0";
+const targetItem = data.find((item) => item.id === targetId);
+// If the item is not found, display a message
+if (!targetItem) {
+  return <div>Item with ID "{targetId}" not found.</div>;
+}
+// Create a variable "targetName" that holds the value of item.name
+const targetName = targetItem.name;
+// Function for creating a todo with the value of targetName as content
+function createTodo2() {
+  const content = targetName; // Set content to the value of targetName
+  client.models.Todo.create({ content });
+  // Set a success message for a new todo
+  setNotification(`Favorite added: "${content}"`);
+  // Clear the notification after 3 seconds
+  setTimeout(() => setNotification(""), 3000);
+}
 
   return (
     <Container fluid>
@@ -87,29 +92,30 @@ const passingHalfGuardKneeling = () => {
           <Card>
             <Card.Body>
               <Row>
-                <h3 className="text-center">Passing Half-Guard (Kneeling):</h3>
+                <h3 className="text-center">{targetItem.sub}:</h3>
               </Row>
               <Row>
 
                 <Col>
                   <video
-                    src="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.mov"
-                    poster="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.png"
+                    src={targetItem.video}
+                    poster={targetItem.videothumb}
                     className="realimg"
                     controls
                     preload="metadata"
                   />
                   <p>Examples in competition:<br />
-                    <a href="https://www.youtube.com/watch?v=xnMtsEidnsQ">x (00.05)</a><br />
-                    <a href="https://www.youtube.com/watch?v=5fVQKJ12iHw&t=227s">x (00:30)</a>
+                    <a href={targetItem.ex1l}>{targetItem.ex1}</a><br />
+                    <a href={targetItem.ex2l}>{targetItem.ex2}</a>
                   </p>
                 </Col>
                 <Col>
                   <Row>
                   <Col xs={12} sm={12} md={9} lg={10}>
-                  <h5><strong>Body Lock KneeCut:</strong></h5>
-                  <p>Smash their knee, body lock, get instep, nearside KneeCut.
+                  <h5><strong>{targetItem.name}</strong></h5>
+                  <p>{targetItem.description}
                   </p>
+                  <a className="btn btn-main-2 btn-round-full btn-success" href={targetItem.b1l}>{targetItem.b1}</a>
                   </Col>
                   <Col xs={12} sm={12} md={3} lg={2}>
                   <Button
@@ -132,11 +138,9 @@ const passingHalfGuardKneeling = () => {
               {/* Buttons to show data */}
               <Row>
                 <h4 className="text-center">Choose your opponent's reaction:</h4>
-                  <Col> 
-                  <a className="btn btn-main-2 btn-round-full btn-success" href="/attackingSideControl">Nothing: Continue to Side Control</a>
-                  </Col>
+                  
                 {data
-                  .filter((item) => item.sub === "passingHalfGuardKneeling")  // Filter items where 'sub' equals "attackingOpenGuard"
+                  .filter((item) => item.sub === "standupUnderhook")  // Filter items where 'sub' equals "attackingOpenGuard"
                   .map((item) => (
                     <Col xs={6} sm={6} md={3} lg={3} key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
                       <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
@@ -224,4 +228,4 @@ const passingHalfGuardKneeling = () => {
   );
 };
 
-export default passingHalfGuardKneeling;
+export default StandupUnderhook;
