@@ -700,7 +700,7 @@
  },
  {
   "id": "pbg0",
-  "sub": "Passing Half Butterfly",
+  "sub": "Passing Butterfly Guard",
   "name": "x",
   "why": "x",
   "description": "x",
@@ -717,7 +717,7 @@
  },
  {
   "id": "pbg1",
-  "sub": "passingHalfButterfly",
+  "sub": "passingButterflyGuard",
   "name": "x",
   "why": "x",
   "description": "x",
@@ -734,7 +734,7 @@
  },
  {
   "id": "pbg2",
-  "sub": "passingHalfButterfly",
+  "sub": "passingButterflyGuard",
   "name": "x",
   "why": "x",
   "description": "x",
@@ -751,7 +751,7 @@
  },
  {
   "id": "pbg3",
-  "sub": "passingHalfButterfly",
+  "sub": "passingButterflyGuard",
   "name": "x",
   "why": "x",
   "description": "x",
