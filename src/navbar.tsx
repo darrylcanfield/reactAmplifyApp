@@ -51,7 +51,8 @@ function NavBar() {
               <NavDropdown.Item href="/attackingKGuard">K Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingOctopusGuard">Octopus Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingCrabRide">CrabRide</NavDropdown.Item>
-              <NavDropdown.Divider />
+            </NavDropdown>
+            <NavDropdown title="Leg Entanglements" id="basic-nav-dropdown">
               <NavDropdown.Item href="/attackingInsideReap">Inside Reap</NavDropdown.Item>
               <NavDropdown.Item href="/attackingOutsideAshi">Outside Ashi</NavDropdown.Item>
               <NavDropdown.Item href="/attackingOutsideReap">Outside Reap</NavDropdown.Item>
