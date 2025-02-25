@@ -35,29 +35,14 @@ function MyList() {
   return (
     <Container fluid>
       <Row>
-        <Col sm={8}>
-          <h4>Learning List: (Click to add or remove)</h4>
-        </Col>
-        
-        {/* Step 3: Input field for entering todo content */}
-        <Col sm={4}>
-          <input
-            type="text"
-            value={todoContent}
-            onChange={(e) => setTodoContent(e.target.value)} // Update state on input change
-            placeholder="Enter transition"
-          />
-          <button onClick={createTodo}>+ New Todo</button>
-        </Col>
+        <div>  
+          <Container fluid className="text-center">
+            <h4> </h4>
+            <h4>Grappling that works,</h4>
+            <h4>And how to do it.</h4>
+          </Container>
+      </div>
       </Row>
-
-      <ul>
-        {todos.map((todo) => (
-          <li onClick={() => deleteTodo(todo.id)} key={todo.id}>
-            {todo.content}
-          </li>
-        ))}
-      </ul>
     </Container>
 
     

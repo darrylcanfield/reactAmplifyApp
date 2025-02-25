@@ -104,9 +104,6 @@ function App() {
 
       </Routes>
       </Container>
-      <footer className="text-center">
-        <p>RealGrappling&copy; </p>
-      </footer>
     </main>
   );
 }
