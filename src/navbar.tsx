@@ -37,7 +37,6 @@ function NavBar() {
               <NavDropdown.Item href="/attackingTurtle">Turtle</NavDropdown.Item>
               <NavDropdown.Item href="/attackingBack">Back</NavDropdown.Item>
               <NavDropdown.Item href="/attackingMount">Mount</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingBack">Back Control</NavDropdown.Item>
               <NavDropdown.Item href="/attackingNorthSouth">North South</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Guard Attacks" id="basic-nav-dropdown">
