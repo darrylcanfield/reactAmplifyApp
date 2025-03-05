@@ -33,10 +33,10 @@ function NavBar() {
               <NavDropdown.Item href="/passingSingleLegX">Pass Single Leg X</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Top Attacks" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/attackingSideControl">Side Control</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingTurtle">Turtle</NavDropdown.Item>
               <NavDropdown.Item href="/attackingBack">Back</NavDropdown.Item>
+              <NavDropdown.Item href="/attackingTurtle">Turtle</NavDropdown.Item>
               <NavDropdown.Item href="/attackingMount">Mount</NavDropdown.Item>
+              <NavDropdown.Item href="/attackingSideControl">Side Control</NavDropdown.Item>
               <NavDropdown.Item href="/attackingNorthSouth">North South</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Guard Attacks" id="basic-nav-dropdown">
@@ -46,7 +46,8 @@ function NavBar() {
               <NavDropdown.Item href="/attackingHalfGuard">Half Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingButterflyGuard">Butterfly Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingHalfButterfly">Half Butterfly</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingDeLaRiva">DLR</NavDropdown.Item>
+              <NavDropdown.Item href="/attackingDeLaRiva">DeLaRiva (DLR)</NavDropdown.Item>
+              <NavDropdown.Item href="/attackingReverseDLR">Reverse DeLaRiva</NavDropdown.Item>
               <NavDropdown.Item href="/attackingChoiGuard">Choi Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingKGuard">K Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingOctopusGuard">Octopus Guard</NavDropdown.Item>
@@ -59,7 +60,7 @@ function NavBar() {
               <NavDropdown.Item href="/attacking5050">50/50</NavDropdown.Item>
               <NavDropdown.Item href="/attackingReverseXGuard">Reverse X Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingInvertedGuard">Inverted Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingLegDragGuard">Leg Drag Guard</NavDropdown.Item>
+              <NavDropdown.Item href="/attackingLegDrag">Leg Drag Guard</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Account" id="basic-nav-dropdown">
               <NavDropdown.Item href="/transitions">Transitions</NavDropdown.Item>

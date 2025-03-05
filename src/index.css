@@ -44,3 +44,11 @@ a.btn.btn-main-2.btn-round-full.btn {
 .square.border.col {
   padding: .6em;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: .3rem;
+}
