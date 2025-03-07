@@ -60,7 +60,7 @@ function NavBar() {
               <NavDropdown.Item href="/attacking5050">50/50</NavDropdown.Item>
               <NavDropdown.Item href="/attackingReverseXGuard">Reverse X Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingInvertedGuard">Inverted Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingLegDrag">Leg Drag Guard</NavDropdown.Item>
+              <NavDropdown.Item href="/attackingLegDrag">Cross Ankle X Guard</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Account" id="basic-nav-dropdown">
               <NavDropdown.Item href="/transitions">Transitions</NavDropdown.Item>

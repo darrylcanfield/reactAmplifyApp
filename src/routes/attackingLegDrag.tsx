@@ -140,7 +140,7 @@ function createTodo2() {
                 <h4 className="text-center">Choose your opponent's reaction:</h4>
                   
                 {data
-                  .filter((item) => item.sub === "attackingLegDrag")  // Filter items where 'sub' equals "attackingOpenGuard"
+                  .filter((item) => item.sub === "attackingLegDragGuard")  // Filter items where 'sub' equals "attackingOpenGuard"
                   .map((item) => (
                     <Col xs={6} sm={6} md={3} lg={3} key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
                       <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
