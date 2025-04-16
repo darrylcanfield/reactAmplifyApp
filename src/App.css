@@ -93,5 +93,5 @@ html, body, #root {
 
 .container-fluid {
   padding-top: 25px;
+  --bs-gutter-x: .3rem !important;
 }
-

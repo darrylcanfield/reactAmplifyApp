@@ -1417,3 +1417,7 @@ a:focus {
   opacity: 1;
 }
 
+.container-fluid {
+  padding-top: 25px;
+  --bs-gutter-x: .3rem !important;
+}
