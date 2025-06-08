@@ -32,14 +32,15 @@ function NavBar() {
               <NavDropdown.Item href="/passingHeadquarters">Pass Headquarters</NavDropdown.Item>
               <NavDropdown.Item href="/passingSingleLegX">Pass Single Leg X</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Top Attacks" id="basic-nav-dropdown">
+            <NavDropdown title="Attacking from Top/Back" id="basic-nav-dropdown">
               <NavDropdown.Item href="/attackingBack">Back</NavDropdown.Item>
+              <NavDropdown.Item href="/attackingCrabRide">CrabRide</NavDropdown.Item>
               <NavDropdown.Item href="/attackingTurtle">Turtle</NavDropdown.Item>
               <NavDropdown.Item href="/attackingMount">Mount</NavDropdown.Item>
               <NavDropdown.Item href="/attackingSideControl">Side Control</NavDropdown.Item>
               <NavDropdown.Item href="/attackingNorthSouth">North South</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Guard Attacks" id="basic-nav-dropdown">
+            <NavDropdown title="Attacking from Bottom" id="basic-nav-dropdown">
               <NavDropdown.Item href="/attackingClosedGuard">Closed Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingShinToShin">Shin to Shin</NavDropdown.Item>
               <NavDropdown.Item href="/attackingSingleLegX">Single Leg X</NavDropdown.Item>              
@@ -51,9 +52,6 @@ function NavBar() {
               <NavDropdown.Item href="/attackingChoiGuard">Choi Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingKGuard">K Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingOctopusGuard">Octopus Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingCrabRide">CrabRide</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Leg Entanglements" id="basic-nav-dropdown">
               <NavDropdown.Item href="/attackingInsideReap">Inside Reap</NavDropdown.Item>
               <NavDropdown.Item href="/attackingOutsideAshi">Outside Ashi</NavDropdown.Item>
               <NavDropdown.Item href="/attackingOutsideReap">Outside Reap</NavDropdown.Item>
