@@ -461,7 +461,7 @@
    {
     "id": "acg2",
     "sub": "attackingClosedGuard",
-    "name": "Flower sweep armbar",
+    "name": "Flower Sweep Armbar",
     "why": "They posture up as you shoulder lock",
     "description": "As you close the shoulder lock and attack the closed guard, they stack you. Take your foot off their head, and swing it to the outside, toppling them. Throw the leg back over their head to hit the armbar, now in side control.",
     "ex1": "",
@@ -2139,7 +2139,7 @@
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuard",
   "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/shinToShinHqPancakePass.mov"
  },
  {
   "id": "phq1",
@@ -2156,7 +2156,7 @@
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuard",
   "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/shinToShinHqCrossKneeCutPass.mov"
  },
  {
   "id": "phq2",
@@ -2173,7 +2173,7 @@
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuard",
   "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/hqBodyLockPassAltView.mov"
  },
  {
   "id": "phb0",
@@ -2207,14 +2207,14 @@
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuard",
   "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/shinToShinHqTripodMountPass.mov"
  },
  {
   "id": "phb2",
   "sub": "passingHalfButterfly",
   "name": "Over/Under Tripod Pass",
-  "why": "They pummel the nearside arm in",
-  "description": "When they pummel the nearside arm in, take the overhook with a grip at the elbow, dive your head down and tripod. Push the foot down with your elbow, and step over to mount.",
+  "why": "They frame on your head",
+  "description": "When they frame on your head, elevate your hips and knee cut across to the other side.",
   "ex1": "",
   "ex1l": "",
   "ex2": "",
@@ -2224,7 +2224,7 @@
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuard",
   "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/shinToShinHqCrossKneeCutPass.mov"
  },
  {
   "id": "pbg0",
