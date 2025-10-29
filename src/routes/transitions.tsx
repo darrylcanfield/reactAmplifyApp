@@ -2,7 +2,7 @@ import data from "../data.json";
 
 const Transitions = () => {
   return (
-    <div>
+    <div className="container-fluid">
       <h1>All Transitions</h1>
       <ul>
         {data.map((user) => (
