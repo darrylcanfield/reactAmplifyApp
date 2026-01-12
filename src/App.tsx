@@ -47,6 +47,9 @@ import AttackingSideControl from "./routes/attackingSideControl.tsx";
 import AttackingSingleLegX from "./routes/attackingSingleLegX.tsx";
 import AttackingTurtle from "./routes/attackingTurtle.tsx";
 import AttackingBack from "./routes/attackingBack.tsx";
+import EscapingTurtle from "./routes/escapingTurtle.tsx";
+import EscapingMount from "./routes/escapingMount.tsx";
+import EscapingSideControl from "./routes/escapingSideControl.tsx";
 
 function App() {
   return (
@@ -84,6 +87,9 @@ function App() {
         <Route path='/attackingSingleLegX' element={<AttackingSingleLegX/>} />
         <Route path='/attackingTurtle' element={<AttackingTurtle/>} />
         <Route path='/attackingBack' element={<AttackingBack/>} />
+        <Route path='/escapingTurtle' element={<EscapingTurtle/>} />
+        <Route path='/escapingMount' element={<EscapingMount/>} />
+        <Route path='/escapingSideControl' element={<EscapingSideControl/>} />
 
         <Route path='/standupUnderhook' element={<StandupUnderhook />} />
         <Route path='/standupOverhook' element={<StandupOverhook/>} />

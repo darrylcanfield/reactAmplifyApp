@@ -22,7 +22,7 @@ function NavBar() {
               <NavDropdown.Item href="/standupRussian">Standup: Russian</NavDropdown.Item>
               <NavDropdown.Item href="/standupNoGrips">Standup: No Grips</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Guard Passing" id="basic-nav-dropdown">
+            <NavDropdown title="Attacking from Top/Back" id="basic-nav-dropdown">
               <NavDropdown.Item href="/passingOpenGuardSupine">Pass Open Guard (Supine)</NavDropdown.Item>
               <NavDropdown.Item href="/passingOpenGuardSeated">Pass Open Guard (Seated)</NavDropdown.Item>
               <NavDropdown.Item href="/passingHalfGuardStanding">Pass Half Guard (Standing)</NavDropdown.Item>
@@ -31,8 +31,6 @@ function NavBar() {
               <NavDropdown.Item href="/passingButterflyGuard">Pass Butterfly Guard</NavDropdown.Item>
               <NavDropdown.Item href="/passingHeadquarters">Pass Headquarters</NavDropdown.Item>
               <NavDropdown.Item href="/passingSingleLegX">Pass Single Leg X</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Attacking from Top/Back" id="basic-nav-dropdown">
               <NavDropdown.Item href="/attackingBack">Back</NavDropdown.Item>
               <NavDropdown.Item href="/attackingCrabRide">CrabRide</NavDropdown.Item>
               <NavDropdown.Item href="/attackingTurtle">Turtle</NavDropdown.Item>
@@ -40,7 +38,10 @@ function NavBar() {
               <NavDropdown.Item href="/attackingSideControl">Side Control</NavDropdown.Item>
               <NavDropdown.Item href="/attackingNorthSouth">North South</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Attacking from Bottom" id="basic-nav-dropdown">
+            <NavDropdown title="Attacking/Defending from Bottom" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/escapingTurtle">Turtle Escaping</NavDropdown.Item>
+              <NavDropdown.Item href="/escapingMount">Mount Escaping</NavDropdown.Item>
+              <NavDropdown.Item href="/escapingSideControl">Side Control Escaping</NavDropdown.Item>
               <NavDropdown.Item href="/attackingClosedGuard">Closed Guard</NavDropdown.Item>
               <NavDropdown.Item href="/attackingShinToShin">Shin to Shin</NavDropdown.Item>
               <NavDropdown.Item href="/attackingSingleLegX">Single Leg X</NavDropdown.Item>              

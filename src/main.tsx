@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from "./App.tsx";
 import "./index.css";
 import { Amplify } from "aws-amplify";
-import outputs from "../amplify_outputs.json";
+import awsExports from "./aws-exports";
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
@@ -12,7 +12,7 @@ import '@aws-amplify/ui-react/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-Amplify.configure(outputs);
+Amplify.configure(awsExports);
 
 ReactDOM.createRoot(document.getElementById("root")!).render( 
   <React.StrictMode>

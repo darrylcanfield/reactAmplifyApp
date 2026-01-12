@@ -1289,7 +1289,7 @@
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
     "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/turtle-foot-split-back-take.mp4"
    },
    {
     "id": "at2",
@@ -1306,7 +1306,7 @@
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
     "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/turtle-foot-split-roll-through-back-take.mp4"
    },
    {
     "id": "at3",
@@ -2276,6 +2276,108 @@
   "b2l": "/passingHalfGuard",
   "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
   "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+ },
+ {
+  "id": "dt0",
+  "sub": "Escaping from Turtle",
+  "name": "Reach back Single Leg",
+  "why": "x",
+  "description": "Defending Turtle",
+  "ex1": "",
+  "ex1l": "",
+  "ex2": "",
+  "ex2l": "",
+  "b1": "Continue to: Passing HG (kneeling)",
+  "b1l": "/passingHalfGuard",
+  "b2": "You get put back in standard half-guard",
+  "b2l": "/passingHalfGuard",
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/turtle-escaping-reachback-single-leg.mp4"
+ },
+ {
+  "id": "dt1",
+  "sub": "escapingTurtle",
+  "name": "Defending Turtle",
+  "why": "They try to circle away",
+  "description": "Defending Turtle",
+  "ex1": "",
+  "ex1l": "",
+  "ex2": "",
+  "ex2l": "",
+  "b1": "Continue to: Passing HG (kneeling)",
+  "b1l": "/passingHalfGuard",
+  "b2": "You get put back in standard half-guard",
+  "b2l": "/passingHalfGuard",
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/turtle-granby-counter-foot-control.mp4"
+ },
+ {
+  "id": "dm0",
+  "sub": "Defending Mount",
+  "name": "Mount Knee Escape",
+  "why": "x",
+  "description": "Mount Knee Escape",
+  "ex1": "",
+  "ex1l": "",
+  "ex2": "",
+  "ex2l": "",
+  "b1": "Continue to: Passing HG (kneeling)",
+  "b1l": "/passingHalfGuard",
+  "b2": "You get put back in standard half-guard",
+  "b2l": "/passingHalfGuard",
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/mount-escaping-knee-escape.mp4"
+ },
+ {
+  "id": "dm1",
+  "sub": "escapingMount",
+  "name": "Mount Foot Catch Escape",
+  "why": "They S Mount",
+  "description": "Mount Foot Catch Escape",
+  "ex1": "",
+  "ex1l": "",
+  "ex2": "",
+  "ex2l": "",
+  "b1": "Continue to: Passing HG (kneeling)",
+  "b1l": "/passingHalfGuard",
+  "b2": "You get put back in standard half-guard",
+  "b2l": "/passingHalfGuard",
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/mount-escaping-foot-catch-escape.mp4"
+ },
+ {
+  "id": "dsc0",
+  "sub": "Defending Side Control",
+  "name": "Knee on Belly Foot Push",
+  "why": "x",
+  "description": "Mount Knee Escape",
+  "ex1": "",
+  "ex1l": "",
+  "ex2": "",
+  "ex2l": "",
+  "b1": "Continue to: Passing HG (kneeling)",
+  "b1l": "/passingHalfGuard",
+  "b2": "You get put back in standard half-guard",
+  "b2l": "/passingHalfGuard",
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/side-control-escaping-kneeOnBelly-foot-push.mp4"
+ },
+ {
+  "id": "dsc1",
+  "sub": "escapingSideControl",
+  "name": "Mount Foot Catch Escape",
+  "why": "They S Mount",
+  "description": "Mount Foot Catch Escape",
+  "ex1": "",
+  "ex1l": "",
+  "ex2": "",
+  "ex2l": "",
+  "b1": "Continue to: Passing HG (kneeling)",
+  "b1l": "/passingHalfGuard",
+  "b2": "You get put back in standard half-guard",
+  "b2l": "/passingHalfGuard",
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/mount-escaping-foot-catch-escape.mp4"
  }
  ]
  
