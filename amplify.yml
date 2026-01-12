@@ -8,14 +8,16 @@ backend:
 frontend:
   phases:
     preBuild:
-      build:
-       commands:
-         - npm run build
-    artifacts:
-      baseDirectory: dist
-      files:
-        - '**/*'
-    cache:
-      paths:
-        - .npm/**/*
-        - node_modules/**/*
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - .npm/**/*
+      - node_modules/**/*
