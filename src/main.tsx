@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from "./App.tsx";
 import "./index.css";
 import { Amplify } from "aws-amplify";
-import awsExports from "./aws-exports";
+import awsExports from "/Users/darrylcanfield/Code/rgapp/reactAmplifyApp/src/aws-exports.ts";
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
