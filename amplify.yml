@@ -11,11 +11,11 @@ frontend:
       build:
        commands:
          - npm run build
-  artifacts:
-    baseDirectory: dist
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - .npm/**/*
-      - node_modules/**/*
+    artifacts:
+      baseDirectory: dist
+      files:
+        - '**/*'
+    cache:
+      paths:
+        - .npm/**/*
+        - node_modules/**/*
