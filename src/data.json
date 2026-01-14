@@ -2298,7 +2298,7 @@
   "id": "dt1",
   "sub": "escapingTurtle",
   "name": "Defending Turtle",
-  "why": "They try to circle away",
+  "why": "They try to circle away from them",
   "description": "Defending Turtle",
   "ex1": "",
   "ex1l": "",
