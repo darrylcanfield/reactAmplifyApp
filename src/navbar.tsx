@@ -39,27 +39,34 @@ function NavBar() {
               <NavDropdown.Item href="/attackingNorthSouth">North South</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Attacking/Defending from Bottom" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/escapingTurtle">Turtle Escaping</NavDropdown.Item>
-              <NavDropdown.Item href="/escapingMount">Mount Escaping</NavDropdown.Item>
-              <NavDropdown.Item href="/escapingSideControl">Side Control Escaping</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingClosedGuard">Closed Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingShinToShin">Shin to Shin</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingSingleLegX">Single Leg X</NavDropdown.Item>              
-              <NavDropdown.Item href="/attackingHalfGuard">Half Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingButterflyGuard">Butterfly Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingHalfButterfly">Half Butterfly</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingDeLaRiva">DeLaRiva (DLR)</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingReverseDLR">Reverse DeLaRiva</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingChoiGuard">Choi Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingKGuard">K Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingOctopusGuard">Octopus Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingInsideReap">Inside Reap</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingOutsideAshi">Outside Ashi</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingOutsideReap">Outside Reap</NavDropdown.Item>
-              <NavDropdown.Item href="/attacking5050">50/50</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingReverseXGuard">Reverse X Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingInvertedGuard">Inverted Guard</NavDropdown.Item>
-              <NavDropdown.Item href="/attackingLegDrag">Cross Ankle X Guard</NavDropdown.Item>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', minWidth: '420px' }}>
+                <div>
+                  <NavDropdown.Item href="/escapingTurtle">Turtle Escaping</NavDropdown.Item>
+                  <NavDropdown.Item href="/escapingMount">Mount Escaping</NavDropdown.Item>
+                  <NavDropdown.Item href="/escapingSideControl">Side Control Escaping</NavDropdown.Item>
+                  <NavDropdown.Item href="/escapingBack">Back Escaping</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingClosedGuard">Closed Guard</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingShinToShin">Shin to Shin</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingSingleLegX">Single Leg X</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingHalfGuard">Half Guard</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingButterflyGuard">Butterfly Guard</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingHalfButterfly">Half Butterfly</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingDeLaRiva">DeLaRiva (DLR)</NavDropdown.Item>
+                </div>
+                <div>
+                  <NavDropdown.Item href="/attackingReverseDLR">Reverse DeLaRiva</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingChoiGuard">Choi Guard</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingKGuard">K Guard</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingOctopusGuard">Octopus Guard</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingInsideReap">Inside Reap</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingOutsideAshi">Outside Ashi</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingOutsideReap">Outside Reap</NavDropdown.Item>
+                  <NavDropdown.Item href="/attacking5050">50/50</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingReverseXGuard">Reverse X Guard</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingInvertedGuard">Inverted Guard</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingLegDrag">Seated K Guard</NavDropdown.Item>
+                </div>
+              </div>
             </NavDropdown>
             <NavDropdown title="Account" id="basic-nav-dropdown">
               <NavDropdown.Item href="/transitions">Transitions</NavDropdown.Item>

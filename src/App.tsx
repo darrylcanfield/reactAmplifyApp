@@ -47,6 +47,7 @@ import AttackingSideControl from "./routes/attackingSideControl.tsx";
 import AttackingSingleLegX from "./routes/attackingSingleLegX.tsx";
 import AttackingTurtle from "./routes/attackingTurtle.tsx";
 import AttackingBack from "./routes/attackingBack.tsx";
+import EscapingBack from "./routes/escapingBack.tsx";
 import EscapingTurtle from "./routes/escapingTurtle.tsx";
 import EscapingMount from "./routes/escapingMount.tsx";
 import EscapingSideControl from "./routes/escapingSideControl.tsx";
@@ -88,6 +89,7 @@ function App() {
         <Route path='/attackingTurtle' element={<AttackingTurtle/>} />
         <Route path='/attackingBack' element={<AttackingBack/>} />
         <Route path='/escapingTurtle' element={<EscapingTurtle/>} />
+        <Route path='/escapingBack' element={<EscapingBack/>} />
         <Route path='/escapingMount' element={<EscapingMount/>} />
         <Route path='/escapingSideControl' element={<EscapingSideControl/>} />
 
