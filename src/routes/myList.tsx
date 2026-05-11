@@ -3,7 +3,7 @@ import type { Schema } from "../../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
 import { Container, Row, Col } from "react-bootstrap";
 
-const client = generateClient<Schema>();
+const client = generateClient<Schema>({ authMode: "userPool" });
 
 function MyList() {
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);

@@ -10,7 +10,7 @@ import { Container } from "react-bootstrap";
 
 // *** Change targetId, item.sub, and the export and function ***
 
-const client = generateClient<Schema>();
+const client = generateClient<Schema>({ authMode: "userPool" });
 
 // Define the type for items in the data array
 interface DataItem {

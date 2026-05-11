@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Container } from "react-bootstrap";
 
-const client = generateClient<Schema>();
+const client = generateClient<Schema>({ authMode: "userPool" });
 
 // Define the type for items in the data array
 interface DataItem {

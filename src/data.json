@@ -166,8 +166,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-to-arm-saddle.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-to-arm-saddle.mp4"
    },
    {
     "id": "ahg2",
@@ -188,6 +188,23 @@
    },
    {
     "id": "ahg3",
+    "sub": "attackingHalfGuard",
+    "name": "Knee Pull Transition",
+    "why": "You can't get the underhook, they are pressuring down",
+    "description": "Reach across, coming up on your elbow, and continuing to reach all the way across to their far hip. As you do this, look to switch your half guard hook into a lockdown hook. ",
+    "ex1": "",
+    "ex1l": "",
+    "ex2": "",
+    "ex2l": "",
+    "b1": "Continue to: Passing HG (kneeling)",
+    "b1l": "/passingHalfGuard",
+    "b2": "You get put back in standard half-guard",
+    "b2l": "/passingHalfGuard",
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-arm-saddle-to-knee-collapse.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-arm-saddle-to-knee-collapse.mp4"
+   },
+   {
+    "id": "ahg4",
     "sub": "attackingHalfGuard",
     "name": "Octopus Guard Transition",
     "why": "You can't get the underhook, they are pressuring down",
@@ -387,13 +404,13 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/arm-saddle-kimura.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/arm-saddle-kimura.mp4"
    },
    {
     "id": "achg1",
-    "sub": "attacking5050",
-    "name": "Tarikoplata",
+    "sub": "attackingChoiGuard",
+    "name": "Choi Guard Razor Armbar",
     "why": "They hide their wrist",
     "description": "As they hide the wrist inside, take your bottom leg out and bring it over their back. Drive your arm across your hip. Reach under their foot and elevate them up to sweep, finishing on top and continuing to turn and crank the arm to finish.",
     "ex1": "",
@@ -404,8 +421,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/arm-saddle-razor-armbar.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/arm-saddle-razor-armbar.mp4"
    },
    {
     "id": "achg2",
@@ -421,8 +438,42 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/arm-saddle-arm-bar.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/arm-saddle-arm-bar.mp4"
+   },
+   {
+    "id": "achg3",
+    "sub": "attackingChoiGuard",
+    "name": "Face ChoiBar",
+    "why": "They hide their wrist and trap your bottom foot.",
+    "description": "If they are trapping your bottom foot and hiding their wrist, drive your top foot all the way through and under their far armpit. Begin attacking the armbar, hooking the leg and rolling through if neccessary.",
+    "ex1": "",
+    "ex1l": "",
+    "ex2": "",
+    "ex2l": "",
+    "b1": "Continue to: Passing HG (kneeling)",
+    "b1l": "/passingHalfGuard",
+    "b2": "You get put back in standard half-guard",
+    "b2l": "/passingHalfGuard",
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/arm-saddle-to-face-armbar.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/arm-saddle-to-face-armbar.mp4"
+   },
+   {
+    "id": "achg4",
+    "sub": "attackingChoiGuard",
+    "name": "Tarikoplata",
+    "why": "They hide their wrist",
+    "description": "As they hide the wrist inside, take your bottom leg out and bring it over their back. Drive your arm across your hip. Reach under their foot and elevate them up to sweep, finishing on top and continuing to turn and crank the arm to finish.",
+    "ex1": "",
+    "ex1l": "",
+    "ex2": "",
+    "ex2l": "",
+    "b1": "Continue to: Passing HG (kneeling)",
+    "b1l": "/passingHalfGuard",
+    "b2": "You get put back in standard half-guard",
+    "b2l": "/passingHalfGuard",
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/arm-saddle-to-tarikoplata.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/arm-saddle-to-tarikoplata.mp4"
    },
 {
     "id": "acg0",
@@ -897,8 +948,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/north-south-choke.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/north-south-choke.mp4"
    },
    {
     "id": "ans1",
@@ -920,9 +971,9 @@
    {
     "id": "ans2",
     "sub": "attackingNorthSouth",
-    "name": "Spin to far side Side Control",
+    "name": "Spin to the far side for Giftwrap Back Take",
     "why": "The defend with the far arm",
-    "description": "When they frame with their far arm, spin through to side control on the other side.",
+    "description": "When they frame with their far arm, spin through to side control on the other side. Start to look for the giftwrap, and eventually the back take.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -931,8 +982,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/northsouth-to-circeling-back-take.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/northsouth-to-circeling-back-take2.mp4"
    },
    {
     "id": "ans3",
@@ -1260,9 +1311,9 @@
  {
     "id": "asc0",
     "sub": "Attacking from Side Control",
-    "name": "Farside Armbar",
-    "why": "x",
-    "description": "Get a deep underhook on the far side and step over their head. Spin to the other side, and throw that leg over their waist to secure the Armbar.",
+    "name": "Farside Kimura",
+    "why": "They turn down to the mat and do not allow you to get the underhook",
+    "description": "As they glue their head to the mat and stop your giftwrap, step over their head, and over their elbow on the far side.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -1271,15 +1322,15 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/side-control-giftwrap-kimura.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/side-control-giftwrap-kimura.mp4"
    },
    {
     "id": "asc1",
     "sub": "attackingSideControl",
     "name": "Farside Kimura",
     "why": "They turn down to the mat and do not allow you to get the underhook",
-    "description": "As they turn down to the mat, take wrist control, and circle torwards to their head, stepping over it, and reaching all the way around for the far underhook. Secure the Kimura grip and pull them off the mat to turn their arm passed their hip to   finish.",
+    "description": "As they glue their head to the mat and stop your giftwrap, step over their head, and over their elbow on the far side.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -1288,15 +1339,15 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/side-control-giftwrap-kimura.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/side-control-giftwrap-kimura.mp4"
    },
    {
     "id": "asc2",
     "sub": "attackingSideControl",
-    "name": "Back Take",
-    "why": "They put their arm across to your far hip",
-    "description": "As you attack their farside arm, they reach across to defend it. Help it across with your chest and take a giftwrap. Once it's secure, step over their hips and pull them off the mat to take their back.",
+    "name": "Mounted Reverse Triangle",
+    "why": "They clasp your hands, but around your leg.",
+    "description": "As they clasp their hands around your leg, drive your hooked arm all the way through and across your hip. Reach down for their elbow and pull it as you drive knee down to the mat, into the triangle.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -1305,8 +1356,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/side-control-giftwrap-kimura-to-triangle.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/side-control-giftwrap-kimura-to-triangle.mp4"
    },
    {
     "id": "asc3",
@@ -1322,15 +1373,15 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/north-south-choke.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/north-south-choke.mp4"
    },
    {
     "id": "asc4",
     "sub": "attackingSideControl",
-    "name": "Baratoplata",
-    "why": "They get the underhook, and start to come up",
-    "description": "Take the overhook and start to sprawl out. Once their arm releases, step over it bringing it between your legs. Drive your hook elbow deep, and across your own hip, as you step both legs over their head and back. Turn inside to finish, reaching under their leg or elbow for extra leverage.",
+    "name": "Tarikoplata",
+    "why": "You attempt the kimura but they clasp their hands tight and you can't break them.",
+    "description": "Reach all the way over your own knee, and push their knee to the mat as you step over. Close the space between tour legs as you rotate to finish.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -1339,8 +1390,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/side-control-giftwrap-kimura-to-tarikoplata.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/side-control-giftwrap-kimura-to-tarikoplata.mp4"
    },
  {
     "id": "at0",
@@ -2036,8 +2087,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+2.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-hq-pancake-pass.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-hq-pancake-pass.mp4"
   },
   {
     "id": "phgs3",
@@ -2240,8 +2291,8 @@
   "b1l": "/passingHalfGuard",
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuard",
-  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/shinToShinHqPancakePass.mov"
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-hq-pancake-pass.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-hq-pancake-pass.mp4"
  },
  {
   "id": "phq1",
@@ -2257,8 +2308,8 @@
   "b1l": "/passingHalfGuard",
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuard",
-  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/shinToShinHqCrossKneeCutPass.mov"
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-hq-cross-kneecut-pass.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-hq-cross-kneecut-pass.mp4"
  },
  {
   "id": "phq2",
@@ -2274,8 +2325,8 @@
   "b1l": "/attackingSideControl",
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuard",
-  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/hqBodyLockPassAltView.mov"
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/hq-bodylock-pass-alt-view.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/hq-bodylock-pass-alt-view.mp4"
  },
  {
   "id": "phb0",
