@@ -60,10 +60,11 @@ if (!targetItem) {
 const targetName = targetItem.name;
 // Function for creating a todo with the value of targetName as content
 function createTodo2() {
-  if (!targetItem) return;
-  const content = targetItem.name;
-  client.models.Todo.create({ content, sub: "attacking5050" });
+  const content = targetName; // Set content to the value of targetName
+  client.models.Todo.create({ content });
+  // Set a success message for a new todo
   setNotification(`Favorite added: "${content}"`);
+  // Clear the notification after 3 seconds
   setTimeout(() => setNotification(""), 3000);
 }
 
