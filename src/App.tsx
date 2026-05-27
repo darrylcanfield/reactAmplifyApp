@@ -31,6 +31,7 @@ import AttackingCrabRide from "./routes/attackingCrabRide.tsx";
 import AttackingDeLaRiva from "./routes/attackingDeLaRiva.tsx";
 import AttackingHalfButterfly from "./routes/attackingHalfButterfly.tsx";
 import AttackingHalfGuard from "./routes/attackingHalfGuard.tsx";
+import AttackingHalfGuardKneeling from "./routes/attackingHalfGuardKneeling.tsx";
 import AttackingInsideReap from "./routes/attackingInsideReap.tsx";
 import AttackingInvertedGuard from "./routes/attackingInvertedGuard.tsx";
 import AttackingKGuard from "./routes/attackingKGuard.tsx";
@@ -72,6 +73,7 @@ function App() {
         <Route path='/attackingDeLaRiva' element={<AttackingDeLaRiva/>} />
         <Route path='/attackingHalfButterfly' element={<AttackingHalfButterfly/>} />
         <Route path='/attackingHalfGuard' element={<AttackingHalfGuard/>} />
+        <Route path='/attackingHalfGuardKneeling' element={<AttackingHalfGuardKneeling/>} />
         <Route path='/attackingInsideReap' element={<AttackingInsideReap/>} />
         <Route path='/attackingInvertedGuard' element={<AttackingInvertedGuard/>} />
         <Route path='/attackingKGuard' element={<AttackingKGuard/>} />

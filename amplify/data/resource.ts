@@ -4,6 +4,7 @@ const schema = a.schema({
   Todo: a
     .model({
       content: a.string(),
+      sub: a.string(),
     })
     .authorization((allow) => [allow.owner()]),
 });

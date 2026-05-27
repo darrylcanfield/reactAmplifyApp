@@ -48,7 +48,8 @@ function NavBar() {
                   <NavDropdown.Item href="/attackingClosedGuard">Closed Guard</NavDropdown.Item>
                   <NavDropdown.Item href="/attackingShinToShin">Shin to Shin</NavDropdown.Item>
                   <NavDropdown.Item href="/attackingSingleLegX">Single Leg X</NavDropdown.Item>
-                  <NavDropdown.Item href="/attackingHalfGuard">Half Guard</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingHalfGuard">Half Guard Standing</NavDropdown.Item>
+                  <NavDropdown.Item href="/attackingHalfGuardKneeling">Half Guard Kneeling</NavDropdown.Item>
                   <NavDropdown.Item href="/attackingButterflyGuard">Butterfly Guard</NavDropdown.Item>
                   <NavDropdown.Item href="/attackingHalfButterfly">Half Butterfly</NavDropdown.Item>
                   <NavDropdown.Item href="/attackingDeLaRiva">DeLaRiva (DLR)</NavDropdown.Item>

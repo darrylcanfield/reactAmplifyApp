@@ -47,14 +47,14 @@ function MyList() {
             onChange={(e) => setTodoContent(e.target.value)} // Update state on input change
             placeholder="Enter transition"
           />
-          <button onClick={createTodo}>+ New Todo</button>
+          <button onClick={createTodo}>+ New Transition</button>
         </Col>
       </Row>
 
       <ul>
         {todos.map((todo) => (
           <li onClick={() => deleteTodo(todo.id)} key={todo.id}>
-            {todo.content}
+            {todo.content} <span className="text-muted">({todo.sub})</span>
           </li>
         ))}
       </ul>

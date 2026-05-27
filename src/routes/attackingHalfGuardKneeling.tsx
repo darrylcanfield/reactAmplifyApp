@@ -15,32 +15,33 @@ const client = generateClient<Schema>({ authMode: "userPool" });
 // Define the type for items in the data array
 interface DataItem {
   id: string;
-  sub: string;
-  name: string;
   why: string;
+  name: string;
   description: string;
+  b1: string;
+  b2: string;
+  b1l: string;
+  b2l: string;
   ex1: string;
   ex1l: string;
   ex2: string;
-  ex2l: string;
-  b1: string;
-  b1l: string;
-  b2: string;
-  b2l: string;
-  videothumb: string;
+  ex2l: string
   video: string;
+  videothumb: string;
 }
 
-const Attacking5050 = () => {
+const attackingHalfGuardKneeling = () => {
 
   const [activeItem, setActiveItem] = useState<DataItem | null>(null); // State for the active item
   const [notification, setNotification] = useState<string | null>(null); // State for notification message
 
  // Function for creating a todo with activeItem.name
- function createTodo(content: string, sub: string) {
-  if (!content.trim()) return;
-  client.models.Todo.create({ content, sub });
+ function createTodo(content: string) {
+  if (!content.trim()) return; // Prevent creating empty todos
+  client.models.Todo.create({ content });
+  // Set a success message for a new todo
   setNotification(`Favorite added: "${content}"`);
+  // Clear the notification after 3 seconds
   setTimeout(() => setNotification(null), 3000);
 }
 
@@ -50,7 +51,7 @@ const handleButtonClick = (item: DataItem) => {
 };
 
 // Find the item with the specific id
-const targetId = "aff0";
+const targetId = "ahgk0";
 const targetItem = data.find((item) => item.id === targetId);
 // If the item is not found, display a message
 if (!targetItem) {
@@ -60,10 +61,11 @@ if (!targetItem) {
 const targetName = targetItem.name;
 // Function for creating a todo with the value of targetName as content
 function createTodo2() {
-  if (!targetItem) return;
-  const content = targetItem.name;
-  client.models.Todo.create({ content, sub: "attacking5050" });
+  const content = targetName; // Set content to the value of targetName
+  client.models.Todo.create({ content });
+  // Set a success message for a new todo
   setNotification(`Favorite added: "${content}"`);
+  // Clear the notification after 3 seconds
   setTimeout(() => setNotification(""), 3000);
 }
 
@@ -138,7 +140,7 @@ function createTodo2() {
                 <h4 className="text-center">Choose your opponent's reaction:</h4>
                   
                 {data
-                  .filter((item) => item.sub === "attacking5050")  // Filter items where 'sub' equals "attackingOpenGuard"
+                  .filter((item) => item.sub === "attackingHalfGuardKneeling")  // Filter items where 'sub' equals "attackingOpenGuard"
                   .map((item) => (
                     <Col xs={6} sm={6} md={3} lg={3} key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
                       <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
@@ -198,7 +200,9 @@ function createTodo2() {
                                   variant="primary"
                                   onClick={() => {
                                     if (activeItem) {
-                                      createTodo(activeItem.name, activeItem.sub);
+                                      createTodo(activeItem.name);
+                                    } else {
+                                      alert("No active item selected");
                                     }
                                   }}
                                 >⭐ save
@@ -224,4 +228,4 @@ function createTodo2() {
   );
 };
 
-export default Attacking5050;
+export default attackingHalfGuardKneeling;
