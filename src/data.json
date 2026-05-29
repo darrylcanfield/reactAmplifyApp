@@ -1594,15 +1594,15 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/reverse-xguard-reap.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/reverse-xguard-reap.mp4"
    },
    {
     "id": "arxg1",
     "sub": "attackingReverseXGuard",
-    "name": "Kick through Inside Reap",
-    "why": "They stand and run",
-    "description": "Kick your foot through, and towards the ceiling, as you topple your oppoent to that side, into the reap.",
+    "name": "Scoop Grip Getup",
+    "why": "They keep their weight on their back foot",
+    "description": "Switch your grips to the knee and the scoop grip. Extend your legs and remove the close foot as you do a getup.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -1611,15 +1611,15 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/reverse-xguard-switch-to-scoop-grip-getup.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/reverse-xguard-switch-to-scoop-grip-getup.mp4"
    },
    {
     "id": "arxg2",
     "sub": "attackingReverseXGuard",
     "name": "Seated Kick back inside Reap",
-    "why": "They sit to the mat or fall",
-    "description": "",
+    "why": "They keep their leg high in the air",
+    "description": "When they keep their leg high and out of reach, switch your splitting leg to their hip, and spin your hips inside to the reap.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -1628,8 +1628,8 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/reverse-xguard-highleg-counter-switch-reap.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/reverse-xguard-highleg-counter-switch-reap.mp4"
    },
    {
     "id": "s2o1wc0",
@@ -2087,14 +2087,14 @@
     "b1l": "/attackingSideControl",
     "b2": "",
     "b2l": "/legDrag",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/pushCirclePass.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/pushCirclePass.mp4"
   },
   {
     "id": "pogSe1",
     "sub": "passingOpenGuardSeated",
     "name": "Nearside Knee Cut",
-    "why": "They over-extend their leg, reaching in HG",
+    "why": "They over-extend their leg, rexaching in HG",
     "description": "As they over-extend their leg reaching for a connection, knee cut through.",
     "ex1": "",
     "ex1l": "",
@@ -2146,7 +2146,7 @@
     "sub": "Passing Half-Guard (Standing)",
     "name": "Knee Cut (near side)",
     "why": "They put you back in Half Guard",
-    "description": "Crushing the knee down, connecting your hands underneath, and smash passing through.",
+    "description": "Knee cut through.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -2155,15 +2155,15 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-half-guard-undehook-kneecut.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-half-guard-undehook-kneecut.mp4"
   },
   {
     "id": "phgs1",
     "sub": "passingHalfGuardStanding",
     "name": "Farside Knee Cut",
-    "why": "They frame and block your knee cut",
-    "description": "When they frame and block your knee cut, lift the knee and drive it across to HQ.",
+    "why": "They frame to block your knee cut",
+    "description": "When they frame to block your knee cut, take the underside wrist grip. Pull it down and come over the top with your other arm as you circle to north south, or to the other side hunting the kimura grip.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -2172,15 +2172,15 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-half-guard-undergrip-drag-kneecut.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-half-guard-undergrip-drag-kneecut.mp4"
   },
   {
     "id": "phgs2",
     "sub": "passingHalfGuardStanding",
     "name": "Shin Smash Pancake Pass",
-    "why": "They frame and block your knee cut, and keep a very high knee shield",
-    "description": "As they frame and block your knee cut with a high knee shield, pressure the shin, walk them.",
+    "why": "They bring their knee up and square up",
+    "description": "As they frame and bring their knee up and square up, lift their knee off the mat and walk them to the other side, driving your shoulder forward with your head on the mat, and taking a grip around their waist.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -2189,15 +2189,15 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-hq-pancake-pass.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-hq-pancake-pass.mp4"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-kneecut-to-pancake-pass.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-kneecut-to-pancake-pass.mp4"
   },
   {
     "id": "phgs3",
     "sub": "passingHalfGuardStanding",
-    "name": "Crab Ride",
-    "why": "They take RDL grip, invert through to a Kiss of the Dragon back take",
-    "description": "As they invert through for the KoD back take, you counter by diving through to a crab ride.",
+    "name": "Dive Over Back Take",
+    "why": "They reach for the Octopus grip",
+    "description": "As they reach across to the far side for the Octopus grip, take a strong Over-Under and escape your legs and jump the back, looking for a hook.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -2206,15 +2206,15 @@
     "b1l": "/passingHalfGuard",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-half-guard-jumping-the-back.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-half-guard-jumping-the-back.mp4"
  },
  {
   "id": "phgs4",
   "sub": "passingHalfGuardStanding",
-  "name": "Leg Drag",
-  "why": "The reap the top leg over for false reap ",
-  "description": "As they reap the top leg over for false reap, drag it all the way through and Leg Drag.",
+  "name": "Counter Inversion Double Unders Pass",
+  "why": "The reap the top leg over and invert",
+  "description": "As they reap the top leg over for false reap, underhook the bottom leg, cut the angle, and drive through with double unders to North South.",
   "ex1": "",
   "ex1l": "",
   "ex2": "",
@@ -2223,8 +2223,8 @@
   "b1l": "/passingHalfGuard",
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuard",
-  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-half-guard-counter-inversion-double-unders-pass.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-half-guard-counter-inversion-double-unders-pass.mp4"
  },
  {
   "id": "phgk0",
