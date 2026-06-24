@@ -58,12 +58,15 @@ if (!targetItem) {
 }
 // Create a variable "targetName" that holds the value of item.name
 const targetName = targetItem.name;
+// Create a variable "targetName" that holds the value of item.name
+const targetSub = targetItem.sub;
 // Function for creating a todo with the value of targetName as content
 function createTodo2() {
   const content = targetName; // Set content to the value of targetName
+  const content2 = targetSub; // Set content to the value of targetName
   client.models.Todo.create({ content });
   // Set a success message for a new todo
-  setNotification(`Favorite added: "${content}"`);
+  setNotification(`Favorite added: "${content} (${content2} )"`);
   // Clear the notification after 3 seconds
   setTimeout(() => setNotification(""), 3000);
 }
