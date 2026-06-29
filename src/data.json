@@ -677,7 +677,7 @@
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuard",
     "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/butterfly-offbalance-sweep.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/butterfly-offbalance-sweep.mov"
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/butterfly-offbalance-sweep.mp4"
    },
    {
     "id": "ahb1",
@@ -2240,8 +2240,8 @@
   "b1l": "/attackingSideControl",
   "b2": "",
   "b2l": "",
-  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.mov"
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-passing-body-lock-knee-cut-pass.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-passing-body-lock-knee-cut-pass.mp4"
  },
  {
   "id": "phgk1",
@@ -2257,8 +2257,8 @@
   "b1l": "/passingHalfGuard",
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuard",
-  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+4.mov"
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-passing-body-lock-over-the-top-pass.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-passing-body-lock-over-the-top-pass.mp4"
  },
  {
   "id": "phgk2",
