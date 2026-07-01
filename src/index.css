@@ -24,7 +24,15 @@ html, body, #root {
 }
 
 .container-fluid {
-  padding-top: 25px;
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding-top: 1.7rem;
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+  }
 }
 
 button.navbar-toggler.collapsed {

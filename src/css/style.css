@@ -1418,7 +1418,7 @@ a:focus {
 }
 
 .container-fluid {
-  padding-top: 25px;
+  padding-top: 1rem;
   --bs-gutter-x: .3rem !important;
 }
 

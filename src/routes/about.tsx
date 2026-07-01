@@ -5,7 +5,7 @@ function About () {
   return (   
     <div>  
     <Container fluid>
-      <h4>Grappling... thats real.</h4>
+      <h4>Grappling & Jiu-Jitsu that works.</h4>
     </Container>
     </div>
   );

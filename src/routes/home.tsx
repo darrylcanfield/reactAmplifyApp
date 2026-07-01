@@ -7,9 +7,10 @@ function MyList() {
       <Row>
         <div>  
           <Container fluid className="text-center">
-            <h4> </h4>
-            <h4>Grappling that works,</h4>
-            <h4>and how to do it.</h4>
+            <h4>Grappling & Jiu-Jitsu that works.</h4>
+          </Container>
+          <Container className="text-center">
+            <img src="https://real-grappling-bucket.s3.us-east-1.amazonaws.com/real-grappling-jiujitsu.png" alt="description" className="img-fluid" />
           </Container>
       </div>
       </Row>

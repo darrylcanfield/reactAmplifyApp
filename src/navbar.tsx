@@ -2,10 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { useAuthenticator } from '@aws-amplify/ui-react';
+// import { useAuthenticator } from '@aws-amplify/ui-react';
 
 function NavBar() {
-  const { signOut } = useAuthenticator();
+//  const { signOut } = useAuthenticator();
   return (
     <Navbar expand="lg" bg="white" className="fixed-top">
       <Container>
@@ -75,7 +75,7 @@ function NavBar() {
               <NavDropdown.Divider />
               <NavDropdown.Item href="/about">About</NavDropdown.Item>
             </NavDropdown>
-            <button onClick={signOut}>Sign out</button>
+              {/* <button onClick={signOut}>Sign out</button> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
