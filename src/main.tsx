@@ -5,7 +5,7 @@ import App from "./App.tsx";
 import "./index.css";
 import { Amplify } from 'aws-amplify';
 import outputs from '../amplify_outputs.json'; // The file generated in step 1
-import { Authenticator } from '@aws-amplify/ui-react';
+/// import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 // Importing the Bootstrap CSS
