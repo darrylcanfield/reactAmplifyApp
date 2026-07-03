@@ -5,6 +5,8 @@ import Home from "./routes/home.tsx";
 import MyList from "./routes/myList.tsx";
 import { Container } from "react-bootstrap";
 import Navbar from "./navbar.tsx";
+import Footer from "./footer.tsx";
+
 
 import StandupUnderhook from "./routes/standupUnderhook.tsx";
 import StandupOverhook from "./routes/standupOverhook.tsx";
@@ -114,6 +116,7 @@ function App() {
 
       </Routes>
       </Container>
+      <Footer />
     </main>
   );
 }
