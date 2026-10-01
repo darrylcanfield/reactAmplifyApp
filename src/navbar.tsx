@@ -28,6 +28,7 @@ function NavBar() {
               <NavDropdown.Item href="/passingHalfGuardStanding">Pass Half Guard (Standing)</NavDropdown.Item>
               <NavDropdown.Item href="/passingHalfGuardKneeling">Pass Half Guard (Kneeling)</NavDropdown.Item>
               <NavDropdown.Item href="/passingHalfButterfly">Pass Half Guard (Butterfly)</NavDropdown.Item>
+              <NavDropdown.Item href="/passingHalfButterflyFloating">Pass Half Guard (Foating Butterfly)</NavDropdown.Item>
               <NavDropdown.Item href="/passingButterflyGuard">Pass Butterfly Guard</NavDropdown.Item>
               <NavDropdown.Item href="/passingHeadquarters">Pass Headquarters</NavDropdown.Item>
               <NavDropdown.Item href="/passingSingleLegX">Pass Single Leg X</NavDropdown.Item>

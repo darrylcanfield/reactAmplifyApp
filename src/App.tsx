@@ -21,6 +21,7 @@ import PassingHalfGuardKneeling from "./routes/passingHalfGuardKneeling.tsx";
 import PassingOpenGuardSupine from "./routes/passingOpenGuardSupine.tsx";
 import PassingOpenGuardSeated from "./routes/passingOpenGuardSeated.tsx";
 import PassingHalfButterfly from "./routes/passingHalfButterfly.tsx";
+import PassingHalfButterflyFloating from "./routes/passingHalfButterflyFloating.tsx";
 import PassingButterflyGuard from "./routes/passingButterflyGuard.tsx";
 import PassingHeadquarters from "./routes/passingHeadquarters.tsx";
 import PassingSingleLegX from "./routes/passingSingleLegX";
@@ -111,6 +112,7 @@ function App() {
           <Route path='/passingHalfGuardKneeling' element={<PassingHalfGuardKneeling />} />
           <Route path='/passingButterflyGuard' element={<PassingButterflyGuard />} />
           <Route path='/passingHalfButterfly' element={<PassingHalfButterfly />} />
+          <Route path='/passingHalfButterflyFloating' element={<PassingHalfButterflyFloating />} />
           <Route path='/passingSingleLegX' element={<PassingSingleLegX />} />
       </Routes>
       </Container>
