@@ -121,7 +121,7 @@ function createTodo2() {
                   </Col>
                   <Col xs={12} sm={12} md={3} lg={2}>
                   <Button
-                    variant="primary"
+                    variant="dark"
                     onClick={() => {
                       createTodo2(); // Always creates "Circling Pass"
                     }}
@@ -129,7 +129,7 @@ function createTodo2() {
                     ⭐ save
                   </Button>
                   </Col>
-                  </Row>
+                  </Row>s
                 </Col>
               </Row>
               <Row>
@@ -199,7 +199,7 @@ function createTodo2() {
                               </Col>
                               <Col xs={12} sm={12} md={3} lg={3}>
                               <Button
-                                  variant="primary"
+                                  variant="dark"
                                   onClick={() => {
                                     if (activeItem) {
                                       createTodo(activeItem.name, activeItem.sub);
