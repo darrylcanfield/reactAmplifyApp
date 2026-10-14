@@ -84,3 +84,7 @@ footer {
     --bs-btn-disabled-bg: #353536;
     --bs-btn-disabled-border-color: #353536;
 }
+
+span.dantred {
+    color: #198754;
+}
