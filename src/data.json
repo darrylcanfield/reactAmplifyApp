@@ -115,8 +115,8 @@
     "b1l": "/attackingSingleLegX",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuardStanding",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/na.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/na.png"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/single-leg-x-getup-sweep.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/single-leg-x-getup-sweep.mp4"
    },
    {
     "id": "aslx3",
@@ -744,8 +744,8 @@
     "b1l": "/passingHalfGuardStanding",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuardStanding",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/na.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/na.png"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/inverted-guard-toe-hold.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/inverted-guard-toe-hold.mp4"
    },
    {
     "id": "aig1",
@@ -1140,7 +1140,7 @@
    },
    {
     "id": "aoa1",
-    "sub": "attackingOutsideAshi",
+    "sub": "",
     "name": "Outside Ashi Low Ankle Lock",
     "why": "You lose the heel",
     "description": "x",
@@ -1160,7 +1160,7 @@
     "sub": "attackingOutsideAshi",
     "name": "Outside Ashi Knee Bar",
     "why": "You lose the heel",
-    "description": "x",
+    "description": "Once the heel slips from outside Ashi, it can be very difficult to dig for it again. In this case, it's sometimes better to comit to rolling through for the kneebar or reap before they come up and smash you. Underhook and elevate the foot first, jamming it near your ear on the top side. As you rotate through, sink your reaping leg in and secure the knee line to finish.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -1169,8 +1169,8 @@
     "b1l": "/passingHalfGuardStanding",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuardStanding",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/na.png",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/na.png"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/outside-ashi-kneebar.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/outside-ashi-kneebar.mp4"
    },
  {
     "id": "aor0",
@@ -1634,7 +1634,7 @@
    {
     "id": "s2o1wc3",
     "sub": "standup2on1WristControl",
-    "name": "Pummel the undehook on the far side",
+    "name": "Pummel the underhook on the far side",
     "why": "They pull their arm out early, and sprawl",
     "description": "As they pull their arm and sprawl, pummel in the underhook on the far side.",
     "ex1": "",
@@ -1957,9 +1957,9 @@
   {
     "id": "pogSu0",
     "sub": "Passing Open Guard (Supine)",
-    "name": "Circling Pass",
-    "why": "They put you back in Open Guard Passing",
-    "description": "Upsidedown grip, circling, making your way to a overhook on the head.",
+    "name": "Double Unders Pass",
+    "why": "",
+    "description": "If they are playing an open guard centered, unwilling to allow you to cut to one side, the double unders pass becomes available. Tripod your head on their sternum, keeping their hips pinned to the mat. Pummel your hands to cup their thigh at the hip on both sides, and begin to cut an angle. Once you do, bring your cross hand to their hip, and use your nearside knee to clear their posting arm.",
     "ex1": "",
     "ex1l": "",
     "ex2": "",
@@ -1968,12 +1968,12 @@
     "b1l": "/attackingSideControl",
     "b2": "They frame and square up, creating a Leg Drag fight",
     "b2l": "/legDrag",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov",
-    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/IMG_5051+3.mov"
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/open-guard-double-unders-pass.png",
+    "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/open-guard-double-unders-pass.mp4"
   },
   {
     "id": "pogSu1",
-    "sub": "passingOpenGuardSupine",
+    "sub": "",
     "name": "Far Side Leg Drag",
     "why": "They frame, turn, and square up with you",
     "description": "As they frame and start to square up, drive them over to the leg drag on the far side.",
@@ -1990,7 +1990,7 @@
   },
   {
     "id": "pogSu2",
-    "sub": "passingOpenGuardSupine",
+    "sub": "",
     "name": "Duck Under",
     "why": "They bring there leg over the top and try to collect your knee",
     "description": "Keep pinning the bottom leg down, while you duck under the top leg and pass on the other side.",
@@ -2007,7 +2007,7 @@
   },
   {
     "id": "pogSu3",
-    "sub": "passingOpenGuardSupine",
+    "sub": "",
     "name": "Crab Ride",
     "why": "They invert through to a Kiss of the Dragon back take",
     "description": "As they invert through for the KoD back take, you counter by diving through to a crab ride.",
@@ -2121,7 +2121,7 @@
     "b1l": "/attackingSideControl",
     "b2": "You get put back in standard half-guard",
     "b2l": "/passingHalfGuardStanding",
-    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/cross-grip-pass-fail-to-half-butterfly.",
+    "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-half-guard-undehook-kneecut.png.",
     "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/passing-half-guard-undehook-kneecut.mp4"
   },
   {
@@ -2257,8 +2257,8 @@
   "b1l": "/passingHalfGuardStanding",
   "b2": "You get put back in standard half-guard",
   "b2l": "/passingHalfGuardStanding",
-  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/na.png",
-  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/na.png"
+  "videothumb": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-walkover-pass.png",
+  "video": "https://real-grappling-bucket.s3.us-east-1.amazonaws.com/half-guard-walkover-pass.mp4"
  },
  {
   "id": "pslx0",
