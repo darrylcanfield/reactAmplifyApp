@@ -1,0 +1,32 @@
+# robots.txt for realgrappling.com
+# Place in public/ so it is served at https://realgrappling.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# AI search and training crawlers (explicitly allowed)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://realgrappling.com/sitemap.xml
