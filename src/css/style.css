@@ -1422,3 +1422,6 @@ a:focus {
   --bs-gutter-x: .3rem !important;
 }
 
+a.btn:empty {
+  display: none;
+}
