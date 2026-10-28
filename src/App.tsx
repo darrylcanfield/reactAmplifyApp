@@ -3,10 +3,12 @@ import Transitions from "./routes/transitions.tsx";
 import About from "./routes/about.tsx";
 import Home from "./routes/home.tsx";
 import MyList from "./routes/myList.tsx";
+import NotFound from "./routes/notFound.tsx";
 import { Container } from "react-bootstrap";
 import Navbar from "./navbar.tsx";
 import Footer from "./footer.tsx";
-
+import { HelmetProvider } from "react-helmet-async";
+import RouteSeo from "./routeSeo.tsx";
 
 import StandupUnderhook from "./routes/standupUnderhook.tsx";
 import StandupOverhook from "./routes/standupOverhook.tsx";
@@ -27,7 +29,7 @@ import PassingHeadquarters from "./routes/passingHeadquarters.tsx";
 import PassingSingleLegX from "./routes/passingSingleLegX";
 
 import Attacking5050 from "./routes/attacking5050.tsx";
-import AttackingButterflyGuard from "./routes/attackingButterflyGuard.tsx"; 
+import AttackingButterflyGuard from "./routes/attackingButterflyGuard.tsx";
 import AttackingChoiGuard from "./routes/attackingChoiGuard.tsx";
 import AttackingClosedGuard from "./routes/attackingClosedGuard.tsx";
 import AttackingCrabRide from "./routes/attackingCrabRide.tsx";
@@ -58,66 +60,71 @@ import EscapingSideControl from "./routes/escapingSideControl.tsx";
 
 function App() {
   return (
-    <div className="page-wrapper">
-      <Navbar />
-      <Container fluid className="main-content">
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/transitions' element={<Transitions />} />
-          <Route path='/myList' element={<MyList />} />
-          <Route path='/about' element={<About />} />
+    <HelmetProvider>
+      <RouteSeo />
+      <div className="page-wrapper">
+        <Navbar />
+        <Container fluid className="main-content">
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/transitions' element={<Transitions />} />
+            <Route path='/myList' element={<MyList />} />
+            <Route path='/about' element={<About />} />
 
-          <Route path='/attacking5050' element={<Attacking5050 />} />
-          <Route path='/attackingButterflyGuard' element={<AttackingButterflyGuard/>} />
-          <Route path='/attackingChoiGuard' element={<AttackingChoiGuard/>} />
-          <Route path='/attackingClosedGuard' element={<AttackingClosedGuard/>} />
-          <Route path='/attackingCrabRide' element={<AttackingCrabRide/>} />
-          <Route path='/attackingDeLaRiva' element={<AttackingDeLaRiva/>} />
-          <Route path='/attackingHalfButterfly' element={<AttackingHalfButterfly/>} />
-          <Route path='/attackingHalfGuard' element={<AttackingHalfGuard/>} />
-          <Route path='/attackingHalfGuardKneeling' element={<AttackingHalfGuardKneeling/>} />
-          <Route path='/attackingInsideReap' element={<AttackingInsideReap/>} />
-          <Route path='/attackingInvertedGuard' element={<AttackingInvertedGuard/>} />
-          <Route path='/attackingKGuard' element={<AttackingKGuard/>} />
-          <Route path='/attackingLegDrag' element={<AttackingLegDrag/>} />
-          <Route path='/attackingMount' element={<AttackingMount/>} />
-          <Route path='/attackingOctopusGuard' element={<AttackingOctopusGuard/>} />
-          <Route path='/attackingNorthSouth' element={<AttackingNorthSouth/>} />
-          <Route path='/attackingOutsideAshi' element={<AttackingOutsideAshi/>} />
-          <Route path='/attackingOutsideReap' element={<AttackingOutsideReap/>} />
-          <Route path='/attackingReverseDLR' element={<AttackingReverseDLR/>} />
-          <Route path='/attackingReverseXGuard' element={<AttackingReverseXGuard/>} />
-          <Route path='/attackingShinToShin' element={<AttackingShinToShin/>} />
-          <Route path='/attackingSideControl' element={<AttackingSideControl/>} />
-          <Route path='/attackingSingleLegX' element={<AttackingSingleLegX/>} />
-          <Route path='/attackingTurtle' element={<AttackingTurtle/>} />
-          <Route path='/attackingBack' element={<AttackingBack/>} />
-          <Route path='/escapingTurtle' element={<EscapingTurtle/>} />
-          <Route path='/escapingBack' element={<EscapingBack/>} />
-          <Route path='/escapingMount' element={<EscapingMount/>} />
-          <Route path='/escapingSideControl' element={<EscapingSideControl/>} />
+            <Route path='/attacking5050' element={<Attacking5050 />} />
+            <Route path='/attackingButterflyGuard' element={<AttackingButterflyGuard/>} />
+            <Route path='/attackingChoiGuard' element={<AttackingChoiGuard/>} />
+            <Route path='/attackingClosedGuard' element={<AttackingClosedGuard/>} />
+            <Route path='/attackingCrabRide' element={<AttackingCrabRide/>} />
+            <Route path='/attackingDeLaRiva' element={<AttackingDeLaRiva/>} />
+            <Route path='/attackingHalfButterfly' element={<AttackingHalfButterfly/>} />
+            <Route path='/attackingHalfGuard' element={<AttackingHalfGuard/>} />
+            <Route path='/attackingHalfGuardKneeling' element={<AttackingHalfGuardKneeling/>} />
+            <Route path='/attackingInsideReap' element={<AttackingInsideReap/>} />
+            <Route path='/attackingInvertedGuard' element={<AttackingInvertedGuard/>} />
+            <Route path='/attackingKGuard' element={<AttackingKGuard/>} />
+            <Route path='/attackingLegDrag' element={<AttackingLegDrag/>} />
+            <Route path='/attackingMount' element={<AttackingMount/>} />
+            <Route path='/attackingOctopusGuard' element={<AttackingOctopusGuard/>} />
+            <Route path='/attackingNorthSouth' element={<AttackingNorthSouth/>} />
+            <Route path='/attackingOutsideAshi' element={<AttackingOutsideAshi/>} />
+            <Route path='/attackingOutsideReap' element={<AttackingOutsideReap/>} />
+            <Route path='/attackingReverseDLR' element={<AttackingReverseDLR/>} />
+            <Route path='/attackingReverseXGuard' element={<AttackingReverseXGuard/>} />
+            <Route path='/attackingShinToShin' element={<AttackingShinToShin/>} />
+            <Route path='/attackingSideControl' element={<AttackingSideControl/>} />
+            <Route path='/attackingSingleLegX' element={<AttackingSingleLegX/>} />
+            <Route path='/attackingTurtle' element={<AttackingTurtle/>} />
+            <Route path='/attackingBack' element={<AttackingBack/>} />
+            <Route path='/escapingTurtle' element={<EscapingTurtle/>} />
+            <Route path='/escapingBack' element={<EscapingBack/>} />
+            <Route path='/escapingMount' element={<EscapingMount/>} />
+            <Route path='/escapingSideControl' element={<EscapingSideControl/>} />
 
-          <Route path='/standupUnderhook' element={<StandupUnderhook />} />
-          <Route path='/standupOverhook' element={<StandupOverhook/>} />
-          <Route path='/standup2on1WristControl' element={<Standup2on1WristControl/>} />
-          <Route path='/standupCollarTie' element={<StandupCollarTie/>} />
-          <Route path='/standupRussian' element={<StandupRussian/>} />
-          <Route path='/standupWristControl' element={<StandupWrstControl/>} />
-          <Route path='/standupNoGrips' element={<StandupNoGrips/>} />
+            <Route path='/standupUnderhook' element={<StandupUnderhook />} />
+            <Route path='/standupOverhook' element={<StandupOverhook/>} />
+            <Route path='/standup2on1WristControl' element={<Standup2on1WristControl/>} />
+            <Route path='/standupCollarTie' element={<StandupCollarTie/>} />
+            <Route path='/standupRussian' element={<StandupRussian/>} />
+            <Route path='/standupWristControl' element={<StandupWrstControl/>} />
+            <Route path='/standupNoGrips' element={<StandupNoGrips/>} />
 
-          <Route path='/passingOpenGuardSupine' element={<PassingOpenGuardSupine />} />
-          <Route path='/passingOpenGuardSeated' element={<PassingOpenGuardSeated />} />
-          <Route path='/passingHeadquarters' element={<PassingHeadquarters />} />
-          <Route path='/passingHalfGuardStanding' element={<PassingHalfGuardStanding />} />
-          <Route path='/passingHalfGuardKneeling' element={<PassingHalfGuardKneeling />} />
-          <Route path='/passingButterflyGuard' element={<PassingButterflyGuard />} />
-          <Route path='/passingHalfButterfly' element={<PassingHalfButterfly />} />
-          <Route path='/passingHalfButterflyFloating' element={<PassingHalfButterflyFloating />} />
-          <Route path='/passingSingleLegX' element={<PassingSingleLegX />} />
-      </Routes>
-      </Container>
-      <Footer />
-    </div>
+            <Route path='/passingOpenGuardSupine' element={<PassingOpenGuardSupine />} />
+            <Route path='/passingOpenGuardSeated' element={<PassingOpenGuardSeated />} />
+            <Route path='/passingHeadquarters' element={<PassingHeadquarters />} />
+            <Route path='/passingHalfGuardStanding' element={<PassingHalfGuardStanding />} />
+            <Route path='/passingHalfGuardKneeling' element={<PassingHalfGuardKneeling />} />
+            <Route path='/passingButterflyGuard' element={<PassingButterflyGuard />} />
+            <Route path='/passingHalfButterfly' element={<PassingHalfButterfly />} />
+            <Route path='/passingHalfButterflyFloating' element={<PassingHalfButterflyFloating />} />
+            <Route path='/passingSingleLegX' element={<PassingSingleLegX />} />
+
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </Container>
+        <Footer />
+      </div>
+    </HelmetProvider>
   );
 }
 
