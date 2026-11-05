@@ -4,7 +4,7 @@ function About () {
 
   return (   
     <section className="py-5 rg-body">
-      <div className="container">
+      <Container>
         <div className="row justify-content-center">
           <div className="col-12 col-lg-10">
 
@@ -49,7 +49,7 @@ function About () {
 
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };
