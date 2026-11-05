@@ -92,7 +92,7 @@ function createTodo2() {
           <Card>
             <Card.Body>
               <Row>
-                <h3 className="text-center">{targetItem.sub}:</h3>
+                <h3 className="text-center">{targetItem.parent}:</h3>
               </Row>
               <Row>
 
@@ -138,12 +138,19 @@ function createTodo2() {
               {/* Buttons to show data */}
               <Row>
                 <h4 className="text-center">Choose your opponent's reaction:</h4>
-                  
+
                 {data
-                  .filter((item) => item.sub === "attackingBack")  // Filter items where 'sub' equals "attackingOpenGuard"
+                  .filter(
+                    (item) =>
+                      item.sub === "attackingBack" &&
+                      !(typeof item.parent === "string" && item.parent.trim() !== "")
+                  )
                   .map((item) => (
-                    <Col xs={6} sm={6} md={3} lg={3} key={item.id}> {/* Ensure 'key' is set to 'item.id' */}
-                      <a className="btn btn-main-2 btn-round-full btn-warning" onClick={() => handleButtonClick(item)}>
+                    <Col xs={6} sm={6} md={3} lg={3} key={item.id}>
+                      <a
+                        className="btn btn-main-2 btn-round-full btn-warning"
+                        onClick={() => handleButtonClick(item)}
+                      >
                         {item.why}
                       </a>
                     </Col>
